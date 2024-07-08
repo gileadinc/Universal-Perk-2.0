@@ -1,4 +1,4 @@
-import { Paper, Group, Text, Title } from "@mantine/core";
+import { Paper, Group, Text, Title, Button } from "@mantine/core";
 import {
   IconUserPlus,
   IconDiscount2,
@@ -79,6 +79,15 @@ export default function StatsGrid() {
           );
         })}
       </div>
+      <Group className="mt-12 mx-auto text-center">
+        <Button
+          radius="xl"
+          size="md"
+          className="flex-1 md:flex-none bg-white rounded-3xl py-3 px-5 mx-auto hover:bg-blue-500"
+        >
+          Donate Now
+        </Button>
+      </Group>
     </div>
   );
 }

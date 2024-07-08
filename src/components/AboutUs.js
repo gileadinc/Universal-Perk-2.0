@@ -19,7 +19,7 @@ export default function AboutUs() {
             About Us
           </Title>
           <Text className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-            CSF is a non-profit organisation registered in the USA in 1963. We
+            NNN is a non-profit organisation registered in the USA in 1963. We
             are governed by a Board of Trustees and managed by our President,
             Executive Director, Treasurer, and Secretary. Meet our team.
           </Text>

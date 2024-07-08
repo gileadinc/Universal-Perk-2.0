@@ -35,14 +35,14 @@ export default function Hero() {
               size="md"
               className="flex-1 md:flex-none bg-blue-500 rounded-3xl py-3 px-5"
             >
-              Get started
+              Donate
             </Button>
             <Button
               radius="xl"
               size="md"
               className="flex-1 md:flex-none ml-4 border border-gray-500 py-3 px-5 rounded-3xl"
             >
-              Source code
+              Contact Us
             </Button>
           </Group>
         </div>

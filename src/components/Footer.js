@@ -20,10 +20,10 @@ export default function Footer() {
         <Anchor href="/about" style={{ marginRight: "1rem" }}>
           About Us
         </Anchor>
-        <Anchor href="/services" style={{ marginRight: "1rem" }}>
-          Services
+        <Anchor href="/volunteer" style={{ marginRight: "1rem" }}>
+          Volunteer
         </Anchor>
-        <Anchor href="/privacy">Privacy Policy</Anchor>
+        <Anchor href="/contact">Contact Us</Anchor>
       </Group>
     </Container>
   );
