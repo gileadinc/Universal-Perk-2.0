@@ -9,7 +9,7 @@ export default function Footer() {
         justifyContent: "space-between",
         alignItems: "center",
       }}
-      className="dark:bg-white p-6 sticky bottom-0"
+      className="p-6 dark:bg-white"
     >
       <Group align="center">
         <Text style={{ fontSize: "0.9rem", color: "#666" }}>
