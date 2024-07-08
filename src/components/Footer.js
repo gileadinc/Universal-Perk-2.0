@@ -2,14 +2,28 @@ import { Container, Text, Group, Anchor } from "@mantine/core";
 
 export default function Footer() {
   return (
-    <Container py="4rem" style={{ borderTop: "1px solid #eaeaea" }}>
-      <Group position="apart">
-        <Text>© 2024 Universal Perk. All rights reserved.</Text>
-        <Group>
-          <Anchor href="/about">About Us</Anchor>
-          <Anchor href="/services">Services</Anchor>
-          <Anchor href="/privacy">Privacy Policy</Anchor>
-        </Group>
+    <Container
+      style={{
+        borderTop: "1px solid #eaeaea",
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+      }}
+      className="dark:bg-white p-6 sticky bottom-0"
+    >
+      <Group align="center">
+        <Text style={{ fontSize: "0.9rem", color: "#666" }}>
+          © 2024 Universal Perk. All rights reserved.
+        </Text>
+      </Group>
+      <Group align="center">
+        <Anchor href="/about" style={{ marginRight: "1rem" }}>
+          About Us
+        </Anchor>
+        <Anchor href="/services" style={{ marginRight: "1rem" }}>
+          Services
+        </Anchor>
+        <Anchor href="/privacy">Privacy Policy</Anchor>
       </Group>
     </Container>
   );
