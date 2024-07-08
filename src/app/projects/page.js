@@ -11,6 +11,7 @@ import {
 } from "@mantine/core";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Volunteer from "../volunteer/page";
 
 const Project = [
   {
@@ -110,6 +111,7 @@ export default function Projects() {
           </div>
         ))}
       </div>
+      <Volunteer />
       <Footer />
     </>
   );

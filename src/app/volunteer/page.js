@@ -6,8 +6,10 @@ import Image from "next/image";
 export default function Volunteer() {
   return (
     <>
-      <Header />
       <Container className="pt-20 pb-24 dark:text-white">
+        <Title className="block mb-20 text-3xl text-center">
+          We prepare a volunteer registration forms
+        </Title>
         <div className="flex items-center justify-between px-4 mx-auto max-w-7xl">
           <div className="hidden w-1/2 pr-8 rounded-lg shadow-lg h-96 md:block">
             <Image
@@ -21,8 +23,8 @@ export default function Volunteer() {
           <div className="w-1/2 ml-10">
             <Title
               order={2}
-              size="xl"
-              className="mb-6 text-4xl font-extrabold text-gray-900 underline dark:text-white"
+              size="md"
+              className="mb-6 text-lg font-extrabold text-gray-900 underline dark:text-white"
             >
               Voluteer Registration Forms
             </Title>
@@ -86,7 +88,6 @@ export default function Volunteer() {
           {/* Image section */}
         </div>
       </Container>
-      <Footer />
     </>
   );
 }
