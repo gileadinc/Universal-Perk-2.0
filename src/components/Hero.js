@@ -5,26 +5,26 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <Container size="md" className="p-16 text-white">
-      <div className="flex justify-between items-center">
+      <div className="flex items-center justify-between">
         {/* Content section */}
         <div className="max-w-lg mr-8">
           <Title
             order={1}
-            className="text-4xl font-extrabold text-gray-900 dark:text-white leading-tight mb-4"
+            className="mb-4 text-4xl font-extrabold leading-tight text-gray-900 dark:text-white"
           >
             Data-driven sustainable development
-            <span className="block text-2xl mt-2 text-blue-100 dark:text-blue-900">
+            <span className="block mt-2 text-2xl text-blue-100 dark:text-blue-900">
               Better data. Better lives.
             </span>
           </Title>
-          <Text className="text-gray-600 dark:text-gray-400 mb-6">
-            CSF is a nonprofit organization established in 1963 that engages
+          <Text className="mb-6 text-gray-600 dark:text-gray-400">
+            NNN is a nonprofit organization established in 1963 that engages
             with communities to build information technology solutions that lead
             to good development outcomes sustained by reliable development
             processes.
           </Text>
 
-          <Text className="text-gray-600 dark:text-gray-400 mb-6">
+          <Text className="mb-6 text-gray-600 dark:text-gray-400">
             We increase people’s choices through innovations that harness the
             power of data to benefit communities economically, socially, and
             environmentally, in support of the 2030 Agenda.
@@ -36,7 +36,7 @@ export default function Hero() {
               <Button
                 radius="xl"
                 size="md"
-                className="flex-1 md:flex-none bg-blue-500 rounded-3xl py-3 px-5"
+                className="flex-1 px-5 py-3 bg-blue-500 md:flex-none rounded-3xl"
               >
                 Donate
               </Button>
@@ -45,7 +45,7 @@ export default function Hero() {
               <Button
                 radius="xl"
                 size="md"
-                className="flex-1 md:flex-none ml-4 border border-gray-500 py-3 px-5 rounded-3xl"
+                className="flex-1 px-5 py-3 ml-4 border border-gray-500 md:flex-none rounded-3xl"
               >
                 Contact Us
               </Button>
@@ -54,7 +54,7 @@ export default function Hero() {
         </div>
 
         {/* Image section */}
-        <div className="w-1/2 h-96 hidden md:block">
+        <div className="hidden w-1/2 h-96 md:block">
           <Image
             src="/home.jpg"
             alt="Sample Image"
