@@ -16,8 +16,8 @@ const icons = {
 };
 
 const data = [
-  { title: "Total Revenue", icon: "revenue", value: "50,000", diff: 15 },
-  { title: "Total Profit", icon: "profit", value: "20,000", diff: -10 },
+  { title: "Total Donation", icon: "revenue", value: "50,000", diff: 15 },
+  { title: "Total Donator", icon: "profit", value: "200", diff: -10 },
   { title: "Coupons Used", icon: "coupons", value: "500", diff: 20 },
   { title: "New Supporters", icon: "customers", value: "100", diff: 5 },
 ];
@@ -27,11 +27,11 @@ export default function StatsGrid() {
     <div className="m-28">
       <Title
         order={2}
-        className="mb-4 mx-auto text-center dark:text-white text-3xl"
+        className="mx-auto mb-4 text-3xl text-center dark:text-white"
       >
         Our Charity Experience
       </Title>
-      <Text className="mb-10 dark:text-white text-center">
+      <Text className="mb-10 text-center dark:text-white">
         Here are some key statistics to highlight the impact of our charity
         work.
       </Text>
@@ -46,16 +46,16 @@ export default function StatsGrid() {
               key={stat.title}
               withBorder
               radius="xl"
-              className="border border-gray-300 dark:border-gray-700 bg-blue-100 dark:bg-white rounded-lg shadow-xl p-5"
+              className="p-5 bg-blue-100 border border-gray-300 rounded-lg shadow-xl dark:border-gray-700 dark:bg-white"
             >
               <Group justify="space-between" className="mb-4">
                 <Text
                   size="sm"
-                  className="text-gray-600 dark:text-black font-semibold uppercase flex"
+                  className="flex font-semibold text-gray-600 uppercase dark:text-black"
                 >
                   {stat.title}
                   <Icon
-                    className="text-gray-400 dark:text-gray-600 ml-3"
+                    className="ml-3 text-gray-400 dark:text-gray-600"
                     size={18}
                   />
                 </Text>
@@ -79,11 +79,11 @@ export default function StatsGrid() {
           );
         })}
       </div>
-      <Group className="mt-12 mx-auto text-center">
+      <Group className="mx-auto mt-12 text-center">
         <Button
           radius="xl"
           size="md"
-          className="flex-1 md:flex-none bg-white rounded-3xl py-3 px-5 mx-auto hover:bg-blue-500"
+          className="flex-1 px-5 py-3 mx-auto bg-white md:flex-none rounded-3xl hover:bg-blue-500"
         >
           Donate Now
         </Button>
