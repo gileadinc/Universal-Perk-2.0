@@ -1,3 +1,6 @@
+// src/app/layout.js
+import { MantineProvider } from "@mantine/core";
+import { NotificationsProvider } from "@mantine/notifications";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -11,7 +14,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+      </head>
+      <body className={inter.className}>
+        <MantineProvider withGlobalStyles withNormalizeCSS>
+          {children}
+        </MantineProvider>
+      </body>
     </html>
   );
 }
