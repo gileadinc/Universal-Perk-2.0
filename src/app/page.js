@@ -4,6 +4,7 @@ import StatsGrid from "../components/Stats";
 import Testimonials from "../components/Testimonials";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import WhatWeDo from "../components/WhatWeDo";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <AboutUs />
       <StatsGrid />
+      <WhatWeDo />
       <Testimonials />
       <Footer />
     </div>
