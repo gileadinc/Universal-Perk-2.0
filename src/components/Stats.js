@@ -16,10 +16,15 @@ const icons = {
 };
 
 const data = [
-  { title: "Total Donation", icon: "revenue", value: "50,000", diff: 15 },
-  { title: "Total Donator", icon: "profit", value: "200", diff: -10 },
+  { title: "Total Charities", icon: "revenue", value: "500", diff: 15 },
+  { title: "Total Countries Covered", icon: "profit", value: "100", diff: -10 },
   { title: "Coupons Used", icon: "coupons", value: "500", diff: 20 },
-  { title: "New Supporters", icon: "customers", value: "100", diff: 5 },
+  {
+    title: "New Supporters For charities",
+    icon: "customers",
+    value: "100",
+    diff: 5,
+  },
 ];
 
 export default function StatsGrid() {
@@ -85,7 +90,7 @@ export default function StatsGrid() {
           size="md"
           className="flex-1 px-5 py-3 mx-auto bg-white md:flex-none rounded-3xl hover:bg-blue-500"
         >
-          Donate Now
+          Contact Now
         </Button>
       </Group>
     </div>

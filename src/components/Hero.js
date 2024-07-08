@@ -13,7 +13,7 @@ export default function Hero() {
             className="mb-4 text-4xl font-extrabold leading-tight text-gray-900 dark:text-white"
           >
             Data-driven sustainable development
-            <span className="block mt-2 text-2xl text-blue-100 dark:text-blue-900">
+            <span className="block mt-2 text-2xl text-blue-500 dark:text-blue-500">
               Better data. Better lives.
             </span>
           </Title>
@@ -32,13 +32,13 @@ export default function Hero() {
 
           {/* Button group */}
           <Group className="mt-8">
-            <Link href="/donate">
+            <Link href="/contact">
               <Button
                 radius="xl"
                 size="md"
                 className="flex-1 px-5 py-3 bg-blue-500 md:flex-none rounded-3xl"
               >
-                Donate
+                Get Started
               </Button>
             </Link>
             <Link href="/contact">

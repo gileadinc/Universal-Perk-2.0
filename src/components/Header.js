@@ -5,7 +5,6 @@ import { Container, Text } from "@mantine/core";
 
 const links = [
   { link: "/", label: "Home" },
-  { link: "/donate", label: "Donate Now" },
   { link: "/volunteer", label: "Volunteer" },
   { link: "/contact", label: "Contact Us" },
 ];
@@ -14,11 +13,11 @@ export default function Header() {
   const [active, setActive] = useState("/about");
 
   return (
-    <header className="bg-white dark:bg-gray-800 shadow-md sticky top-0 px-10">
+    <header className="sticky top-0 px-10 bg-white shadow-md dark:bg-gray-800">
       <Container size="md" className="flex items-center justify-between py-4">
         <Text className="text-white">Logo</Text>
 
-        <nav className="hidden md:flex space-x-4">
+        <nav className="hidden space-x-4 md:flex">
           {links.map((link) => (
             <Link
               key={link.label}

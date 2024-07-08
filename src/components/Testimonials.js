@@ -8,7 +8,7 @@ const Testimonials = ({ isDarkMode }) => {
       }`}
     >
       <div className="mx-auto text-center">
-        <h2 className="mb-10 text-4xl font-bold">What Our Donators Say</h2>
+        <h2 className="mb-10 text-4xl font-bold">What Our Clients Say</h2>
         <div className="flex justify-center space-y-6 sm:space-y-0 sm:space-x-6">
           <div
             className={`p-6 mx-2 rounded-lg shadow-lg w-80 hover:scale-105 ${
@@ -20,8 +20,8 @@ const Testimonials = ({ isDarkMode }) => {
                 isDarkMode ? "text-gray-300" : "text-gray-800"
               }`}
             >
-              "Supporting this charity has been one of the most fulfilling
-              experiences. Their transparency and dedication are unmatched."
+              Supporting this charity has been one of the most fulfilling
+              experiences. Their transparency and dedication are unmatched.
             </p>
             <div className="flex items-center">
               <div className="text-left">
@@ -49,8 +49,8 @@ const Testimonials = ({ isDarkMode }) => {
                 isDarkMode ? "text-gray-300" : "text-gray-800"
               }`}
             >
-              "I've seen firsthand the impact this organization has on the
-              community. I'm proud to be a donor."
+              Ive seen firsthand the impact this organization has on the
+              community. Im proud to be a donor.
             </p>
             <div className="flex items-center">
               <div className="text-left">
@@ -78,8 +78,8 @@ const Testimonials = ({ isDarkMode }) => {
                 isDarkMode ? "text-gray-300" : "text-gray-800"
               }`}
             >
-              "The dedication and effort put in by this charity are inspiring.
-              They truly make a difference."
+              The dedication and effort put in by this charity are inspiring.
+              They truly make a difference.
             </p>
             <div className="flex items-center">
               <div className="text-left">
@@ -107,8 +107,8 @@ const Testimonials = ({ isDarkMode }) => {
                 isDarkMode ? "text-gray-300" : "text-gray-800"
               }`}
             >
-              "It's incredible to see the positive changes brought about by this
-              charity. Their work is truly commendable."
+              Its incredible to see the positive changes brought about by this
+              charity. Their work is truly commendable.
             </p>
             <div className="flex items-center">
               <div className="text-left">
