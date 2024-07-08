@@ -17,17 +17,16 @@ export default function Hero() {
               Better data. Better lives.
             </span>
           </Title>
-          <Text className="mb-6 text-gray-600 dark:text-gray-400">
-            NNN is a nonprofit organization established in 1963 that engages
-            with communities to build information technology solutions that lead
-            to good development outcomes sustained by reliable development
-            processes.
+          <Text className="mb-6 text-lg text-gray-700 dark:text-gray-300">
+            Universal Perk is a technology company dedicated to providing
+            services for charities and non-profit organizations. We are governed
+            by a Board of Trustees and managed by our President, Executive
+            Director, Treasurer, and Secretary. Meet our team.
           </Text>
-
-          <Text className="mb-6 text-gray-600 dark:text-gray-400">
-            We increase people’s choices through innovations that harness the
-            power of data to benefit communities economically, socially, and
-            environmentally, in support of the 2030 Agenda.
+          <Text className="mb-6 text-lg text-gray-700 dark:text-gray-300">
+            We have a global network of over 30 senior advisors and technology
+            partners supported by software labs in New York, New Delhi, and
+            Singapore.
           </Text>
 
           {/* Button group */}

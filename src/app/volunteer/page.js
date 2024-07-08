@@ -7,9 +7,9 @@ export default function Volunteer() {
   return (
     <>
       <Header />
-      <Container className="dark:text-white pt-20 pb-24">
-        <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
-          <div className="w-1/2 h-96 hidden md:block pr-8 rounded-lg shadow-lg">
+      <Container className="pt-20 pb-24 dark:text-white">
+        <div className="flex items-center justify-between px-4 mx-auto max-w-7xl">
+          <div className="hidden w-1/2 pr-8 rounded-lg shadow-lg h-96 md:block">
             <Image
               src="/volunteer.jpg"
               alt="Sample Image"
@@ -22,14 +22,14 @@ export default function Volunteer() {
             <Title
               order={2}
               size="xl"
-              className="font-extrabold text-4xl text-gray-900 dark:text-white mb-6 underline"
+              className="mb-6 text-4xl font-extrabold text-gray-900 underline dark:text-white"
             >
-              Voluteer Registration Form
+              Voluteer Registration Forms
             </Title>
-            <form className="bg-white rounded-lg shadow-lg p-6">
+            <form className="p-6 bg-white rounded-lg shadow-lg">
               <div className="mb-4">
                 <label
-                  className="block text-gray-700 dark:text-gray-700 mb-2"
+                  className="block mb-2 text-gray-700 dark:text-gray-700"
                   htmlFor="email"
                 >
                   Email
@@ -40,12 +40,12 @@ export default function Volunteer() {
                   name="email"
                   placeholder="your@email.com"
                   required
-                  className="border border-black pr-3 pl-2 py-3 dark:text-gray-600 w-2/3 rounded-lg"
+                  className="w-2/3 py-3 pl-2 pr-3 border border-black rounded-lg dark:text-gray-600"
                 />
               </div>
               <div className="mb-4">
                 <label
-                  className="block text-gray-700 dark:text-gray-700 mb-2"
+                  className="block mb-2 text-gray-700 dark:text-gray-700"
                   htmlFor="name"
                 >
                   Name
@@ -56,12 +56,12 @@ export default function Volunteer() {
                   name="name"
                   placeholder="John Doe"
                   required
-                  className="border border-black pr-3 pl-2 py-3 dark:text-gray-600 w-2/3 rounded-lg"
+                  className="w-2/3 py-3 pl-2 pr-3 border border-black rounded-lg dark:text-gray-600"
                 />
               </div>
               <div className="mb-4">
                 <label
-                  className="block text-gray-700 dark:text-gray-700 mb-2"
+                  className="block mb-2 text-gray-700 dark:text-gray-700"
                   htmlFor="name"
                 >
                   Phone Number
@@ -72,12 +72,12 @@ export default function Volunteer() {
                   name="phone"
                   placeholder="0911..."
                   required
-                  className="border border-black pr-3 pl-2 py-3 dark:text-gray-600 w-2/3 rounded-lg"
+                  className="w-2/3 py-3 pl-2 pr-3 border border-black rounded-lg dark:text-gray-600"
                 />
               </div>
 
               <Group justify="flex-end" mt="md">
-                <Button className="control dark:bg-blue-500 px-5 py-3 rounded-lg">
+                <Button className="px-5 py-3 rounded-lg control dark:bg-blue-500">
                   Register
                 </Button>
               </Group>

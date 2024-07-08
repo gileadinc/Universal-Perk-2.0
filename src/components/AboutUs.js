@@ -26,10 +26,10 @@ export default function AboutUs() {
             About Us
           </Title>
           <Text className="mb-6 text-lg text-gray-700 dark:text-gray-300">
-            NNN is a technology company dedicated to providing services for
-            charities and non-profit organizations. We are governed by a Board
-            of Trustees and managed by our President, Executive Director,
-            Treasurer, and Secretary. Meet our team.
+            Universal Perk is a technology company dedicated to providing
+            services for charities and non-profit organizations. We are governed
+            by a Board of Trustees and managed by our President, Executive
+            Director, Treasurer, and Secretary. Meet our team.
           </Text>
           <Text className="mb-6 text-lg text-gray-700 dark:text-gray-300">
             We have a global network of over 30 senior advisors and technology
