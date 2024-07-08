@@ -1,18 +1,11 @@
 'use client'
 import React from "react";
-import { useState } from 'react'
-import { Dialog, DialogPanel } from '@headlessui/react'
 
-const navigation = [
-    { name: 'Product', href: '#' },
-    { name: 'Features', href: '#' },
-    { name: 'Marketplace', href: '#' },
-    { name: 'Company', href: '#' },
-]
+import Typewriter from "./TypeWritter";
+
 
 const Hero = () => {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
+  
     return (
         <div className="bg-white">
 
@@ -59,7 +52,7 @@ const Hero = () => {
                             <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                                 <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                                     <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                                        Transforming Non-Profits with Innovative Software Solutions
+                                        Transforming <Typewriter text="Non-Profits with Innovative Software Solutions" delay={100} />
                                     </h1>
                                     <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
                                         Streamline operations, enhance collaboration, and drive impact with our tailored software services designed specifically for non-profits and international organizations.
