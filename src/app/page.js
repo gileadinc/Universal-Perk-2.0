@@ -8,7 +8,7 @@ import { ArticleCard } from "@/components/ArticleCard";
 
 const articles = [
   {
-    title: "Resident Evil Village review",
+    title: "First Article Title",
     description: "This is a brief description of the first article.",
     badge: "outstanding",
     avatar:
