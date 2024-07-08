@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Container, Text } from "@mantine/core";
 
 const links = [
-  { link: "/about", label: "About Us" },
+  { link: "/", label: "Home" },
   { link: "/donate", label: "Donate Now" },
   { link: "/volunteer", label: "Volunteer" },
   { link: "/contact", label: "Contact Us" },

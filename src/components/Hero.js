@@ -1,4 +1,5 @@
 import { Container, Title, Button, Group, Text } from "@mantine/core";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -37,13 +38,15 @@ export default function Hero() {
             >
               Donate
             </Button>
-            <Button
-              radius="xl"
-              size="md"
-              className="flex-1 md:flex-none ml-4 border border-gray-500 py-3 px-5 rounded-3xl"
-            >
-              Contact Us
-            </Button>
+            <Link href="/contact">
+              <Button
+                radius="xl"
+                size="md"
+                className="flex-1 md:flex-none ml-4 border border-gray-500 py-3 px-5 rounded-3xl"
+              >
+                Contact Us
+              </Button>
+            </Link>
           </Group>
         </div>
 

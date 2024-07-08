@@ -29,7 +29,7 @@ export default function StatsGrid() {
         order={2}
         className="mb-4 mx-auto text-center dark:text-white text-3xl"
       >
-        Our Charity Data
+        Our Charity Experience
       </Title>
       <Text className="mb-10 dark:text-white text-center">
         Here are some key statistics to highlight the impact of our charity
