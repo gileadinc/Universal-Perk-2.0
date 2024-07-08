@@ -32,13 +32,15 @@ export default function Hero() {
 
           {/* Button group */}
           <Group className="mt-8">
-            <Button
-              radius="xl"
-              size="md"
-              className="flex-1 md:flex-none bg-blue-500 rounded-3xl py-3 px-5"
-            >
-              Donate
-            </Button>
+            <Link href="/donate">
+              <Button
+                radius="xl"
+                size="md"
+                className="flex-1 md:flex-none bg-blue-500 rounded-3xl py-3 px-5"
+              >
+                Donate
+              </Button>
+            </Link>
             <Link href="/contact">
               <Button
                 radius="xl"
