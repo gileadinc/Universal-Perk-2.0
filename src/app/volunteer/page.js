@@ -1,6 +1,7 @@
 import { Container, Title, Button, Group } from "@mantine/core";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 
 export default function Volunteer() {
   return (
@@ -8,8 +9,14 @@ export default function Volunteer() {
       <Header />
       <Container className="dark:text-white pt-20 pb-24">
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
-          <div className="w-1/2 h-96 bg-gray-200 hidden md:block pr-8 rounded-lg shadow-lg">
-            {/* Replace with actual image component */}
+          <div className="w-1/2 h-96 hidden md:block pr-8 rounded-lg shadow-lg">
+            <Image
+              src="/volunteer.jpg"
+              alt="Sample Image"
+              width={2070}
+              height={1380}
+              objectFit="cover"
+            />
           </div>
           <div className="w-1/2 ml-10">
             <Title

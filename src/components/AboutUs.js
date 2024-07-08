@@ -1,12 +1,19 @@
 import { Container, Title, Text } from "@mantine/core";
+import Image from "next/image";
 
 export default function AboutUs() {
   return (
     <Container className="dark:text-white my-24">
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
         {/* Image section */}
-        <div className="w-1/2 h-96 bg-gray-200 hidden md:block pr-8">
-          {/* Replace with actual image component */}
+        <div className="w-1/2 h-96 hidden md:block pr-8">
+          <Image
+            src="/volunteer.jpg"
+            alt="Sample Image"
+            width={2070}
+            height={1380}
+            objectFit="cover"
+          />
         </div>
 
         {/* Text section */}

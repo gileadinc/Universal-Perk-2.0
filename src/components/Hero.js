@@ -1,5 +1,6 @@
 import { Container, Title, Button, Group, Text } from "@mantine/core";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -51,8 +52,14 @@ export default function Hero() {
         </div>
 
         {/* Image section */}
-        <div className="w-1/2 h-96 bg-gray-200 hidden md:block">
-          {/* Replace with actual image component */}
+        <div className="w-1/2 h-96 hidden md:block">
+          <Image
+            src="/home.jpg"
+            alt="Sample Image"
+            width={2070}
+            height={1380}
+            objectFit="cover"
+          />
         </div>
       </div>
     </Container>
