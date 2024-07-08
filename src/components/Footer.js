@@ -17,9 +17,6 @@ export default function Footer() {
         </Text>
       </Group>
       <Group align="center">
-        <Anchor href="/about" style={{ marginRight: "1rem" }}>
-          About Us
-        </Anchor>
         <Anchor href="/projects" style={{ marginRight: "1rem" }}>
           Projects
         </Anchor>
