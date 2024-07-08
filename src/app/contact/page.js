@@ -1,6 +1,7 @@
 import { Container, Title, Button, Group } from "@mantine/core";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 
 export default function ContactUs() {
   return (
@@ -75,8 +76,14 @@ export default function ContactUs() {
             </form>
           </div>
           {/* Image section */}
-          <div className="w-1/2 h-96 bg-gray-200 hidden md:block pr-8 rounded-lg shadow-lg ml-10">
-            {/* Replace with actual image component */}
+          <div className="w-1/2 h-96 hidden md:block pr-8 rounded-lg shadow-lg ml-10">
+            <Image
+              src="/home.jpg"
+              alt="Sample Image"
+              width={2070}
+              height={1380}
+              objectFit="cover"
+            />
           </div>
         </div>
       </Container>
