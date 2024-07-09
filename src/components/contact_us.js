@@ -7,7 +7,7 @@ const Contact = () => {
                 <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
                     <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
                         
-                        <h2 className="text-3xl font-bold tracking-tight text-gray-900">Do you have a project in mind?</h2>
+                        <h2 className="text-3xl font-bold tracking-tight text-gray-900">Start your project with us now</h2>
                         <p className="mt-6 text-lg leading-8 text-gray-600">
                         If you have any ideas in mind, send us your contact information and we will reach out to you.
                         </p>

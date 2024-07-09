@@ -9,7 +9,7 @@ const features = [
         icon: Cloud,
     },
     {
-        name: 'Customized Relationship Management',
+        name: 'Customer Relationship Management',
         description: 'Develop a CRM system tailored specifically for non-profits, enabling you to efficiently manage relationships with donors, volunteers, and stakeholders.',
         icon: MonitorSpeaker,
     },

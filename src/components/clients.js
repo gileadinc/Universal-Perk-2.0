@@ -1,42 +1,30 @@
 import React from "react"
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
+import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+
 
 const images = [
     {
-        path: "/UN_transparent_logo.png",
-        alt: "United Nations"
+        path: "/bayer-logo.jpeg",
+        alt: "Bayer"
     },
     {
-        path: "/unicef.png",
-        alt: "Unicef"
+        path: "/cognizant-logo.png",
+        alt: "Cognizant"
     },
     {
-        path: "/IDB.png",
-        alt: "IDB"
+        path: "/deliotte-logo.png",
+        alt: "Deliotte"
     },
     {
-        path: "/save_the_children.png",
-        alt: "United Nations"
+        path: "/paypal-logo.png",
+        alt: "Paypal"
     },
     {
-        path: "/UN_transparent_logo.png",
-        alt: "UN_transparent_logo.png"
+        path: "/tiktok-logo.webp",
+        alt: "Tiktok"
     },
-    {
-        path: "/UN_transparent_logo.png",
-        alt: "United Nations"
-    },
-    {
-        path: "/unicef.png",
-        alt: "Unicef"
-    },
-    {
-        path: "/IDB.png",
-        alt: "IDB"
-    },
-
 ]
-
 
 const Clients = () => {
     return (
@@ -50,6 +38,11 @@ const Clients = () => {
                         opts={{
                             align: "start",
                         }}
+                        plugins={[
+                            Autoplay({
+                              delay: 2000,
+                            }),
+                          ]}
                         className="w-full"
                         
                     >
@@ -69,8 +62,6 @@ const Clients = () => {
                                 </CarouselItem>
                             ))}
                         </CarouselContent>
-                        <CarouselPrevious />
-                        <CarouselNext />
                     </Carousel>
                 </div>
 

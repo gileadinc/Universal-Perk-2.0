@@ -3,40 +3,38 @@ import React from "react";
 const projects = [
     {
         id: 1,
-        title: 'Custom Crop Report',
+        title: 'Paypal checkout form',
+        company:"Paypal",
         href: '#',
         description:
             'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-        imageUrl:
-            'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
-        date: 'Mar 16, 2020',
-        datetime: '2020-03-16',
+        imageUrl: '/paypal.png',
+      
         
     },
 
     {
         id: 1,
+        
         title: 'Drag and drop form creator',
+        company:"AFT Labour Union", 
         href: '#',
         description:
             'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-        imageUrl:
-            'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
-        date: 'Mar 16, 2020',
-        datetime: '2020-03-16',
+        imageUrl:'/form-designer.png',
+      
         
     },
 
     {
         id: 1,
         title: 'PDF Report Generator',
+        company:"Bayer",
         href: '#',
         description:
             'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-        imageUrl:
-            'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
-        date: 'Mar 16, 2020',
-        datetime: '2020-03-16',
+        imageUrl: '/report.png',
+     
         
     },
 ]
@@ -62,9 +60,7 @@ const Projects = () => {
                             <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
 
                             <div className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
-                                <time dateTime={project.datetime} className="mr-8">
-                                    {project.date}
-                                </time>
+                                
                                 <div className="-ml-4 flex items-center gap-x-4">
                                     <svg viewBox="0 0 2 2" className="-ml-0.5 h-0.5 w-0.5 flex-none fill-white/50">
                                         <circle r={1} cx={1} cy={1} />
@@ -77,6 +73,10 @@ const Projects = () => {
                                     <span className="absolute inset-0" />
                                     {project.title}
                                 </a>
+
+                            </h3>
+                            <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
+                                {project.company}
                             </h3>
                         </article>
                     ))}
