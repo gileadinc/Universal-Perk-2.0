@@ -33,7 +33,7 @@ export default function Home() {
       <header className="sticky top-0 px-4 bg-white shadow-md md:px-10 dark:bg-gray-800">
         <Container size="md" className="flex items-center justify-between py-4">
           <Link href="#hero">
-            <Image src="/logo2.png" alt="Logo" width={120} height={40} />
+            <Image src="/logo2.png" alt="Logo" width={80} height={20} />
           </Link>
           <div className="md:hidden">
             <button
