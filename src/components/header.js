@@ -3,12 +3,16 @@ import { Menu, X } from "lucide-react";
 import React, { useState } from "react";
 
 const navigation = [
-    { name: 'Home', href: '#home' },
-    { name: 'Services', href: '#features' },
-    { name: 'Portfolio', href: '#projects' },
-    { name: 'Book Consultation', href: '#schedule' },
-    { name: 'Contact us', href: '#contact' },
+    { name: 'Home', href: 'home' },
+    { name: 'Services', href: 'features' },
+    { name: 'Portfolio', href: 'projects' },
+    { name: 'Book Consultation', href: 'schedule' },
+    { name: 'Contact us', href: 'contact' },
 ]
+
+const scrollToSection = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  };
 
 const Header = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -37,7 +41,10 @@ const Header = () => {
                 </div>
                 <div className="hidden lg:flex justify-center w-[90%] lg:gap-x-12">
                     {navigation.map((item) => (
-                        <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+                        <a key={item.name} href={`#${item.href}`} onClick={(e) => {
+                            e.preventDefault();
+                            scrollToSection(item.href)
+                        }} className="text-sm font-semibold leading-6 text-gray-900">
                             {item.name}
                         </a>
                     ))}
@@ -71,8 +78,12 @@ const Header = () => {
                                 {navigation.map((item) => (
                                     <a
                                         key={item.name}
-                                        href={item.href}
+                                        href={`#${item.href}`}
                                         className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            scrollToSection(item.href)
+                                        }}
                                     >
                                         {item.name}
                                     </a>
