@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Universal Perk",
-  description: "Universal-perk landing page",
+  description: "Universal perk landing page",
 };
 
 export default function RootLayout({ children }) {
