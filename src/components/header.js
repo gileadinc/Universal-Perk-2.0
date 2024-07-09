@@ -10,12 +10,15 @@ const navigation = [
     { name: 'Contact us', href: 'contact' },
 ]
 
-const scrollToSection = (id) => {
-    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-  };
+
 
 const Header = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+    const scrollToSection = (id) => {
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        setMobileMenuOpen(false)
+      };
     return (
         <header className="absolute inset-x-0 top-0 z-50">
             <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
@@ -44,6 +47,7 @@ const Header = () => {
                         <a key={item.name} href={`#${item.href}`} onClick={(e) => {
                             e.preventDefault();
                             scrollToSection(item.href)
+                            
                         }} className="text-sm font-semibold leading-6 text-gray-900">
                             {item.name}
                         </a>
