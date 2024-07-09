@@ -30,7 +30,7 @@ export default function Hero() {
           </Text>
 
           {/* Button group */}
-          <Group className="mt-8">
+          <Group className="mt-8 sm:flex">
             <Link href="/contact">
               <Button
                 radius="xl"
