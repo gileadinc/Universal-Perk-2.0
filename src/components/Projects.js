@@ -9,9 +9,6 @@ import {
   Button,
   Title,
 } from "@mantine/core";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import Volunteer from "../volunteer/page";
 
 const Project = [
   {
@@ -52,7 +49,6 @@ export default function Projects() {
 
   return (
     <>
-      <Header />
       <Title className="my-10 text-3xl text-center text-white">
         Our Projects
       </Title>
@@ -111,8 +107,6 @@ export default function Projects() {
           </div>
         ))}
       </div>
-      <Volunteer />
-      <Footer />
     </>
   );
 }
