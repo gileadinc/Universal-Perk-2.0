@@ -45,7 +45,7 @@ export default function Hero() {
                 radius="xl"
                 size="lg" // Adjusted size for better readability
                 variant="outline"
-                className="w-full md:w-auto px-5 py-3 ml-4 border border-gray-500 rounded-3xl"
+                className="w-full md:w-auto px-5 py-3 border border-gray-500 rounded-3xl"
               >
                 Contact Us
               </Button>
