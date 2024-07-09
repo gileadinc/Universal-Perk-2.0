@@ -35,7 +35,7 @@ export default function Hero() {
               <Button
                 radius="xl"
                 size="lg" // Adjusted size for better readability
-                className="w-full md:w-auto mb-4 md:mb-0 md:mr-4"
+                className="w-full md:w-auto mb-4 md:mb-0 md:mr-4  bg-blue-500 px-5 py-3 rounded-3xl"
               >
                 Get Started
               </Button>
@@ -45,7 +45,7 @@ export default function Hero() {
                 radius="xl"
                 size="lg" // Adjusted size for better readability
                 variant="outline"
-                className="w-full md:w-auto"
+                className="w-full md:w-auto px-5 py-3 ml-4 border border-gray-500 rounded-3xl"
               >
                 Contact Us
               </Button>
