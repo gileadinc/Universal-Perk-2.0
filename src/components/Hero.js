@@ -5,9 +5,9 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <Container size="md" className="p-16 text-white">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col md:flex-row items-center justify-between">
         {/* Content section */}
-        <div className="max-w-lg mr-8">
+        <div className="max-w-lg mb-8 md:mb-0 md:mr-8">
           <Title
             order={1}
             className="mb-4 text-4xl font-extrabold leading-tight text-white dark:text-white"
@@ -30,12 +30,12 @@ export default function Hero() {
           </Text>
 
           {/* Button group */}
-          <Group className="mt-8 sm:flex">
+          <Group className="mt-8">
             <Link href="/contact">
               <Button
                 radius="xl"
-                size="md"
-                className="flex-1 px-5 py-3 bg-blue-500 md:flex-none rounded-3xl"
+                size="lg" // Adjusted size for better readability
+                className="w-full md:w-auto mb-4 md:mb-0 md:mr-4"
               >
                 Get Started
               </Button>
@@ -43,8 +43,9 @@ export default function Hero() {
             <Link href="/contact">
               <Button
                 radius="xl"
-                size="md"
-                className="flex-1 px-5 py-3 ml-4 border border-gray-500 md:flex-none rounded-3xl"
+                size="lg" // Adjusted size for better readability
+                variant="outline"
+                className="w-full md:w-auto"
               >
                 Contact Us
               </Button>
@@ -53,7 +54,7 @@ export default function Hero() {
         </div>
 
         {/* Image section */}
-        <div className="hidden w-1/2 h-96 md:block">
+        <div className="hidden w-full md:w-1/2 h-96 md:block">
           <Image
             src="/home.jpg"
             alt="Sample Image"
