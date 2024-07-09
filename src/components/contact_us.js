@@ -6,10 +6,10 @@ const Contact = () => {
             <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
                 <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
                     <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-                        
+
                         <h2 className="text-3xl font-bold tracking-tight text-gray-900">Start your project with us now</h2>
                         <p className="mt-6 text-lg leading-8 text-gray-600">
-                        If you have any ideas in mind, send us your contact information and we will reach out to you.
+                            If you have any ideas in mind, send us your contact information and we will reach out to you.
                         </p>
                         <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
                             <div className="flex gap-x-4">
@@ -18,9 +18,9 @@ const Contact = () => {
                                     <Building aria-hidden="true" className="h-7 w-6 text-gray-400" />
                                 </dt>
                                 <dd>
-                                    545 Mavis Island
+                                    13785 Research Blvd,
                                     <br />
-                                    placeholder, IL 00000
+                                    Suite 125 Austin, TX 78750
                                 </dd>
                             </div>
                             <div className="flex gap-x-4">
@@ -30,7 +30,7 @@ const Contact = () => {
                                 </dt>
                                 <dd>
                                     <a href="tel:+1 (555) 234-5678" className="hover:text-gray-900">
-                                        +1 (555) 234-5678
+                                    +1 (650)256-7514
                                     </a>
                                 </dd>
                             </div>
@@ -41,7 +41,7 @@ const Contact = () => {
                                 </dt>
                                 <dd>
                                     <a href="mailto:placeholder@gmail.com" className="hover:text-gray-900">
-                                        placeholder@gmail.com
+                                        contact@universalperk.com
                                     </a>
                                 </dd>
                             </div>
