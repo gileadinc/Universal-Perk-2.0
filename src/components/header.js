@@ -59,7 +59,7 @@ const Header = () => {
                             <span className="sr-only">Universal Perk</span>
                             <img
                                 alt=""
-                                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                                src="https://www.universalperk.com/images/logo4.png"
                                 className="h-8 w-auto"
                             />
                         </a>
