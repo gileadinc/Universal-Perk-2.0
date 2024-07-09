@@ -2,7 +2,7 @@ import { Building, Mail, Phone } from "lucide-react";
 
 const Contact = () => {
     return (
-        <div className="relative isolate bg-white my-10">
+        <div className="relative isolate bg-white my-10" id="contact">
             <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
                 <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
                     <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
@@ -40,7 +40,7 @@ const Contact = () => {
                                     <Mail aria-hidden="true" className="h-7 w-6 text-gray-400" />
                                 </dt>
                                 <dd>
-                                    <a href="mailto:placeholder@gmail.com" className="hover:text-gray-900">
+                                    <a href="mailto:contact@universalperk.com" className="hover:text-gray-900">
                                         contact@universalperk.com
                                     </a>
                                 </dd>
@@ -79,6 +79,37 @@ const Contact = () => {
                                     />
                                 </div>
                             </div>
+
+                            <div>
+                                <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
+                                    Job title
+                                </label>
+                                <div className="mt-2.5">
+                                    <input
+                                        id="first-name"
+                                        name="first-name"
+                                        type="text"
+                                        autoComplete="given-name"
+                                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                    />
+                                </div>
+                            </div>
+
+                            <div>
+                                <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
+                                    Company name
+                                </label>
+                                <div className="mt-2.5">
+                                    <input
+                                        id="first-name"
+                                        name="first-name"
+                                        type="text"
+                                        autoComplete="given-name"
+                                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                    />
+                                </div>
+                            </div>
+                          
                             <div className="sm:col-span-2">
                                 <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
                                     Email
@@ -94,19 +125,20 @@ const Contact = () => {
                                 </div>
                             </div>
                             <div className="sm:col-span-2">
-                                <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-gray-900">
+                                <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
                                     Phone number
                                 </label>
                                 <div className="mt-2.5">
                                     <input
-                                        id="phone-number"
-                                        name="phone-number"
-                                        type="tel"
-                                        autoComplete="tel"
+                                        id="email"
+                                        name="email"
+                                        type="email"
+                                        autoComplete="email"
                                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
+                           
                             <div className="sm:col-span-2">
                                 <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
                                     Project description

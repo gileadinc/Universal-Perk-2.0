@@ -3,11 +3,11 @@ import { Menu, X } from "lucide-react";
 import React, { useState } from "react";
 
 const navigation = [
-    { name: 'Home', href: '#' },
-    { name: 'Services', href: '#' },
-    { name: 'Portfolio', href: '#' },
-    { name: 'Book Consultation', href: '#' },
-    { name: 'Contact us', href: '#' },
+    { name: 'Home', href: '#home' },
+    { name: 'Services', href: '#features' },
+    { name: 'Portfolio', href: '#projects' },
+    { name: 'Book Consultation', href: '#schedule' },
+    { name: 'Contact us', href: '#contact' },
 ]
 
 const Header = () => {
@@ -21,7 +21,7 @@ const Header = () => {
                         <img
                             alt=""
                             src="https://www.universalperk.com/images/logo4.png"
-                            className="h-10 w-auto"
+                            className="h-20 w-auto"
                         />
                     </a>
                 </div>

@@ -72,7 +72,7 @@ const Footer = () => {
                                         <Mail aria-hidden="true" className="h-7 w-6 text-white" />
                                     </dt>
                                     <dd>
-                                        <a href="mailto:placeholder@gmail.com" className="hover:text-white">
+                                        <a href="mailto:contact@universalperk.com" className="hover:text-white">
                                             contact@universalperk.com
                                         </a>
                                     </dd>

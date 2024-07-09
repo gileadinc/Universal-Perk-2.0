@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 
 import { ArrowBigDown, Check, CloudCog, Fingerprint, Lock, Menu, X } from 'lucide-react'
 import Hero from '@/components/hero'
@@ -12,20 +12,23 @@ import Contact from '@/components/contact_us'
 import Footer from '@/components/footer'
 
 const  LandingPage = () => {
-    
 
+
+    
+   
+
+    const scrollToSection = (sectionRef) => {
+        sectionRef.current.scrollIntoView({behaviour: "smooth"})
+    }
     return (
         <div className="bg-white">
-            <Header />
-
-
+            <Header/>
             <main className="isolate">
-              
-                <Hero />
-               <Features />
+               <Hero />
+               <Features/>
                <Clients />
-               <Projects />
-               <Schedule />
+               <Projects/>
+               <Schedule/>
                 <Contact />
             </main>
             <Footer /> 
