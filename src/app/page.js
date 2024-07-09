@@ -1,5 +1,4 @@
-"use client";
-import React, { useState } from "react";
+"use client";import React, { useState } from "react";
 import Link from "next/link";
 import Hero from "../components/Hero";
 import AboutUs from "../components/AboutUs";
@@ -10,6 +9,7 @@ import Testimonials from "../components/Testimonials";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 import { Container, Text } from "@mantine/core";
+import Image from "next/image"; // Import Image from Next.js
 
 const links = [
   { link: "#hero", label: "Home" },
@@ -26,7 +26,11 @@ export default function Home() {
     <div>
       <header className="sticky top-0 px-10 bg-white shadow-md dark:bg-gray-800">
         <Container size="md" className="flex items-center justify-between py-4">
-          <Text className="text-gray-900 dark:text-white">Universal Perk</Text>
+          <Link href="#hero">
+            <a>
+              <Image src="/logo1.png" alt="Logo" width={120} height={40} />
+            </a>
+          </Link>
           <nav className="hidden space-x-4 md:flex">
             {links.map((link) => (
               <a
