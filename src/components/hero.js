@@ -1,11 +1,7 @@
 'use client'
 import React from "react";
 
-import Typewriter from "./TypeWritter";
-
-
-
-
+import Typewriter from "./TypeWritter"; 
 const Hero = () => {
 
     const scrollToSection = (id) => {
@@ -54,15 +50,15 @@ const Hero = () => {
                         />
                     </div>
                     <div className="overflow-hidden">
-                        <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
+                        <div className="mx-auto max-w-7xl px-6 py-8">
                             <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                                 <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                                     <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                                        Transforming <Typewriter text="Non-Profits with Innovative Software Solutions" delay={100} />
+                                        Transforming <Typewriter text="your needs with Innovative Software Solutions" delay={100} />
                                     </h1>
                                     <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                                        Streamline operations, enhance collaboration, and drive impact with our tailored software services designed specifically for non-profits and international organizations.
-                                    </p>
+                                    Incorporate industries such as government sector, startups, corporations, travel industry, and telecommunications industry
+                                    </p> 
                                     <div className="mt-10 flex items-center gap-x-6">
                                         <a
                                             href="#contact"
