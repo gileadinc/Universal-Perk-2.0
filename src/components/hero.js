@@ -57,7 +57,7 @@ const Hero = () => {
                                         Transforming <Typewriter text="your needs with Innovative Software Solutions" delay={100} />
                                     </h1>
                                     <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                                    Incorporating comprehensive web and mobile development services across a broader range of industries beyond non-profits and international organizations
+                                    Incorporate industries such as government sector, startups, corporations, travel industry, and telecommunications industry
                                     </p> 
                                     <div className="mt-10 flex items-center gap-x-6">
                                         <a

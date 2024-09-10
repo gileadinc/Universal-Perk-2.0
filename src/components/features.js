@@ -10,7 +10,7 @@ import React from "react";
 
 const features = [
   {
-    name: "Comprehensive ERP Development for Non-Profits",
+    name: "Comprehensive ERP Development ",
     description:
       "Tailored to fit your unique workflows, our custom project management software streamlines tasks, enhances collaboration, and boosts productivity, giving you full control over your projects from start to finish.",
     icon: Cloud,
@@ -18,7 +18,7 @@ const features = [
   {
     name: "Customer Relationship Management",
     description:
-      "Develop a CRM system tailored specifically for non-profits, enabling you to efficiently manage relationships with donors, volunteers, and stakeholders.",
+      "Enhance your customer interactions and drive growth with our versatile CRM solutions. Ideal for all industries, our systems streamline processes, boost satisfaction, and support your business goals with customizable features designed for your unique needs.",
     icon: MonitorSpeaker,
   },
   {
@@ -52,11 +52,11 @@ const Features = () => {
     <div className="relative bg-white py-4" id="features">
       <div className="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8">
         <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Services we provide
+          Our capabilities
         </p>
         <p className="mx-auto mt-5 max-w-prose text-xl text-gray-500">
-          Our comprehensive range of services is designed to support non-profits
-          and international organizations in achieving their mission more
+          Our comprehensive range of services is designed to support
+          international organizations in achieving their mission more
           efficiently
         </p>
         <div className="mt-20">

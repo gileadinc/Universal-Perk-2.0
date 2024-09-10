@@ -52,7 +52,7 @@ const projects = [
     This migration will enhance the app's accessibility across various platforms while retaining native-like functionality and ensuring 
     a seamless user experience. The focus is on improving versatility, efficiency, and cross-platform compatibility.`,
     imageUrl: "/report.png",
-    tech: ["vue.js", "d3.js", "popper.js", "jest", "pupeeter.js", "nuxt.js"],
+    tech: ["vue.js", "d3.js", "popper.js", "jest", "pupeeter.js", "nuxt.js", "mobx", "react-native"],
   },
   {
     id: 4,
@@ -64,7 +64,7 @@ const projects = [
     their architecture for future growth. By leveraging our advanced strategies, we facilitated efficient and 
     scalable solutions, enhancing their operational capabilities and supporting their long-term objectives. 
     Our tailored approach ensured that all cloud-related aspects were expertly managed, driving impactful results for the company.`,
-    tech: ["cloud", "architecture"],
+    tech: ["cloud", "AWS", "Azure", "OpenAI", "Staffing","Project Management"],
   },
   {
     id: 5,
