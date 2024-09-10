@@ -77,7 +77,15 @@ const projects = [
     and generate actionable insights. With customizable modules and real-time data synchronization, our CRM empowers businesses to 
     build stronger relationships, 
     optimize sales strategies, and drive growth efficiently.`,
-    tech: ["react.js", "d3.js", "lambda", "dynamoDb", "s3", "apiGateway", "aws-cdk"]
+    tech: [
+      "react.js",
+      "d3.js",
+      "lambda",
+      "dynamoDb",
+      "s3",
+      "apiGateway",
+      "aws-cdk",
+    ],
   },
 ];
 
@@ -125,7 +133,10 @@ const Projects = () => {
 
                               <div className="flex flex-wrap gap-2 p-4">
                                 {project.tech.map((t) => (
-                                  <span className="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">
+                                  <span
+                                    key={t}
+                                    className="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20"
+                                  >
                                     {t}
                                   </span>
                                 ))}
