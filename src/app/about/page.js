@@ -11,7 +11,7 @@ const navigation = [
   { name: "Services", href: "/" },
   { name: "Portfolio", href: "/" },
   { name: "Contact us", href: "/" },
-  { name: "about", href: "/about" },
+  { name: "About", href: "/about" },
 ];
 
 const footer = {
@@ -179,7 +179,7 @@ export default function About() {
         </div>
         <div className="w-full flex justify-start ">
           <p className="text-[#6B7280] text-base sm:text-[24px] font-[400]">
-            mission is to empower businesses by delivering cutting-edge
+            is to empower businesses by delivering cutting-edge
             technology and tailored software solutions that help them thrive in
             today’s dynamic market. With a client-focused approach, we
             specialize in enhancing operational efficiency, improving business
@@ -239,7 +239,7 @@ export default function About() {
         </div>
         <div className="w-full flex justify-start ">
           <p className="text-[#6B7280] text-base sm:text-[24px] font-[400]">
-            With years of experience serving diverse industries, including
+            With 7+ years of experience serving diverse industries, including
             transportation, healthcare, e-commerce, and retail, Universal Perk
             is a trusted partner for businesses looking to leverage technology
             for growth. Our team brings deep technical knowledge combined with a

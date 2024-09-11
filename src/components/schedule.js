@@ -64,14 +64,15 @@ const Schedule = () => {
         </p>
       </div>
       <div className="flex items-center justify-center">
-        <div className="overflow-hidden w-[90%]">
+        <div className="overflow-hidden">
           <div className="flex items-center justify-end space-x-[100px] animate-loop-scroll">
             {images.map((image, index) => (
-              <div key={index} className="max-w-30">
+              <div key={index}>
                 <img
                   loading="lazy"
                   src={image.path}
-                  className="w-full h-auto object-fit"
+                  style={{maxWidth: '250px'}}
+                  className="w-auto h-[65px] max-w-auto"
                   alt={image.alt}
                 />
               </div>
