@@ -1,15 +1,5 @@
 "use client";
 import { useRef, useState } from "react";
-
-import {
-  ArrowBigDown,
-  Check,
-  CloudCog,
-  Fingerprint,
-  Lock,
-  Menu,
-  X,
-} from "lucide-react";
 import Hero from "@/components/hero";
 import Header from "@/components/header";
 import Clients from "@/components/clients";
@@ -38,5 +28,4 @@ const LandingPage = () => {
     </div>
   );
 };
-
 export default LandingPage;

@@ -15,7 +15,7 @@ import React from "react";
 const projects = [
   {
     id: 1,
-    title: "Paypal checkout form",
+    title: "Paypal Checkout Page Redesign",
     company: "Paypal",
     href: "#",
     description: `We led a successful migration of REST API services to GraphQL, resulting in a 300% improvement in site performance. 
@@ -23,12 +23,12 @@ const projects = [
       ensuring modern architecture compatibility, enhanced maintainability, and streamlined future development processes. 
       This work has significantly improved the scalability and responsiveness of the platform.`,
     imageUrl: "/paypal.png",
-    tech: ["node.js", "graphql", "react.js", "angular"],
+    tech: ["node.js", "graphql", "react.js", "angular", "apollo"],
   },
 
   {
     id: 2,
-    title: "Drag and drop form creator",
+    title: "Drag and Drop Form Creator",
     company: "AFT Labour Union",
     href: "#",
     description: `Developed an intuitive drag-and-drop form builder, enabling users to create custom forms effortlessly.
@@ -42,7 +42,7 @@ const projects = [
 
   {
     id: 3,
-    title: "PDF Report Generator",
+    title: "PDF Report Generator & Migrated IOS App to Progressive Web App",
     company: "Bayer",
     href: "#",
     description: `This project involves the development of a customized PDF reporting system that 
@@ -64,7 +64,7 @@ const projects = [
     their architecture for future growth. By leveraging our advanced strategies, we facilitated efficient and 
     scalable solutions, enhancing their operational capabilities and supporting their long-term objectives. 
     Our tailored approach ensured that all cloud-related aspects were expertly managed, driving impactful results for the company.`,
-    tech: ["cloud", "AWS", "Azure", "OpenAI", "Staffing","Project Management"],
+    tech: ["Cloud", "AWS", "Azure", "OpenAI", "Staffing","Project Management"],
   },
   {
     id: 5,
@@ -82,9 +82,11 @@ const projects = [
       "d3.js",
       "lambda",
       "dynamoDb",
+      "node",
       "s3",
       "apiGateway",
       "aws-cdk",
+      "pyhton"
     ],
   },
 ];

@@ -1,5 +1,8 @@
+"use client";
+
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Menu, X } from "lucide-react";
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 const navigation = [
@@ -7,14 +10,23 @@ const navigation = [
   { name: "Services", href: "features" },
   { name: "Portfolio", href: "projects" },
   { name: "Contact us", href: "contact" },
+  { name: "About", link: "about" },
 ];
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const router = useRouter();
+
   const scrollToSection = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
     setMobileMenuOpen(false);
+  };
+
+  const handleNavigation = (link) => {
+   
+    console.log(link, "link")
+    router.push(`/${link}`);
   };
   return (
     <header className="absolute inset-x-0 top-0 z-50">
@@ -46,12 +58,19 @@ const Header = () => {
           {navigation.map((item) => (
             <a
               key={item.name}
-              href={`#${item.href}`}
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToSection(item.href);
-              }}
-              className="text-sm font-semibold leading-6 text-gray-900"
+              href={""}
+              onClick={
+                !item.link
+                  ? (e) => {
+                      e.preventDefault();
+                      scrollToSection(item.href);
+                    }
+                  : (e) => {
+                    e.preventDefault();
+                    handleNavigation(item.link)
+                  }
+              }
+              className={`text-sm font-semibold leading-6 `}
             >
               {item.name}
             </a>
@@ -89,12 +108,15 @@ const Header = () => {
                 {navigation.map((item) => (
                   <a
                     key={item.name}
-                    href={`#${item.href}`}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      scrollToSection(item.href);
-                    }}
+                    onClick={
+                      !item.link
+                        ? (e) => {
+                            e.preventDefault();
+                            scrollToSection(item.href);
+                          }
+                        : (e) => handleNavigation(e, item.link)
+                    }
                   >
                     {item.name}
                   </a>
