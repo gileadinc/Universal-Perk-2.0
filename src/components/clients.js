@@ -40,23 +40,21 @@ const images = [
 const Clients = () => {
   return (
     <div className="flex flex-col mb-10 mt-10">
-      {/* <div className="flex flex-col items-center">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Our Clients
+      <div className="flex flex-col items-center">
+        <h2 className="text-3xl font-bold tracking-tight text-gray-500 mb-4">
+          Trusted By
         </h2>
-        <p className="mt-2 text-lg leading-8 text-gray-600">
-          Trusted by Industry Leaders: Our Esteemed Clients
-        </p>
-      </div> */}
+      </div>
       <div className="flex items-center justify-center">
-        <div className="overflow-hidden w-[70%]">
-          <div className="flex items-center justify-end space-x-20 animate-loop-scroll">
+        <div className="overflow-hidden">
+          <div className="flex items-center justify-end space-x-40 animate-loop-scroll">
             {images.map((image, index) => (
-              <div key={index} className="max-w-20">
+              <div key={index}>
                 <img
                   loading="lazy"
                   src={image.path}
-                  className="w-full h-auto object-fit"
+                  style={{maxWidth: '250px'}}
+                  className="w-auto h-[65px] max-w-auto"
                   alt={image.alt}
                 />
               </div>
