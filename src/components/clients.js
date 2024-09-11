@@ -49,11 +49,12 @@ const Clients = () => {
         <div className="overflow-hidden">
           <div className="flex items-center justify-end space-x-40 animate-loop-scroll">
             {images.map((image, index) => (
-              <div key={index} className="max-w-20">
+              <div key={index}>
                 <img
                   loading="lazy"
                   src={image.path}
-                  className="w-full h-auto object-fit"
+                  style={{maxWidth: '250px !important'}}
+                  className="w-auto h-[65px]"
                   alt={image.alt}
                 />
               </div>
