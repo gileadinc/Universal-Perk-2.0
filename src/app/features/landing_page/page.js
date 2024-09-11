@@ -1,7 +1,5 @@
 "use client";
 import { useRef, useState } from "react";
-
-
 import Hero from "@/components/hero";
 import Header from "@/components/header";
 import Clients from "@/components/clients";
@@ -30,5 +28,4 @@ const LandingPage = () => {
     </div>
   );
 };
-
 export default LandingPage;
