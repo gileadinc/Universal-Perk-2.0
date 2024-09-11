@@ -53,8 +53,8 @@ const Clients = () => {
                 <img
                   loading="lazy"
                   src={image.path}
-                  style={{maxWidth: '250px !important'}}
-                  className="w-auto h-[65px]"
+                  style={{maxWidth: '250px'}}
+                  className="w-auto h-[65px] max-w-auto"
                   alt={image.alt}
                 />
               </div>
