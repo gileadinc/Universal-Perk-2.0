@@ -11,7 +11,7 @@ const navigation = [
   { name: "Services", href: "/" },
   { name: "Portfolio", href: "/" },
   { name: "Contact us", href: "/" },
-  { name: "About", href: "/about" },
+  { name: "about", href: "/about" },
 ];
 
 const footer = {
@@ -77,7 +77,7 @@ export default function About() {
                   <span className="sr-only">Universal Perk</span>
                   <img
                     alt=""
-                    src="https://www.universalperk.com/images/logo4.png"
+                    src="/logo.svg"
                     className="h-20 w-auto"
                   />
                 </a>
@@ -116,7 +116,7 @@ export default function About() {
                     <span className="sr-only">Universal Perk</span>
                     <img
                       alt=""
-                      src="https://www.universalperk.com/images/logo4.png"
+                      src="/logo.svg"
                       className="h-8 w-auto"
                     />
                   </a>
@@ -179,7 +179,7 @@ export default function About() {
         </div>
         <div className="w-full flex justify-start ">
           <p className="text-[#6B7280] text-base sm:text-[24px] font-[400]">
-            is to empower businesses by delivering cutting-edge
+             is to empower businesses by delivering cutting-edge
             technology and tailored software solutions that help them thrive in
             today’s dynamic market. With a client-focused approach, we
             specialize in enhancing operational efficiency, improving business
@@ -215,7 +215,7 @@ export default function About() {
           <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((feature) => (
               <div key={feature.title} className="pt-6">
-                <div className="flow-root rounded-lg bg-gray-50 px-6 pb-8 bg-[#111827]">
+                <div className="flow-root rounded-lg px-6 pb-8 bg-[#111827]">
                   <div className="-mt-6 py-10">
                     <h3 className="mt-8 text-lg font-semibold leading-8 tracking-tight text-white">
                       {feature.title}
@@ -239,7 +239,7 @@ export default function About() {
         </div>
         <div className="w-full flex justify-start ">
           <p className="text-[#6B7280] text-base sm:text-[24px] font-[400]">
-            With 7+ years of experience serving diverse industries, including
+            With years of experience serving diverse industries, including
             transportation, healthcare, e-commerce, and retail, Universal Perk
             is a trusted partner for businesses looking to leverage technology
             for growth. Our team brings deep technical knowledge combined with a

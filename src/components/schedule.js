@@ -1,83 +1,36 @@
 const Schedule = () => {
-  const images = [
-    {
-      path: "/react.svg",
-      alt: "react",
-    },
-    {
-      path: "/javascript.svg",
-      alt: "Javascript",
-    },
-    {
-      path: "/angular.svg",
-      alt: "Angular",
-    },
-    {
-      path: "/aws.svg",
-      alt: "AWS",
-    },
-    {
-      path: "/d3.svg",
-      alt: "D3",
-    },
-    {
-      path: "/flutter.svg",
-      alt: "Flutter",
-    },
-    {
-      path: "/gcp.svg",
-      alt: "Google cloud",
-    },
-    {
-      path: "/css.svg",
-      alt: "Css",
-    },
-    {
-      path: "/html.svg",
-      alt: "HTML",
-    },
-    {
-      path: "/azure.svg",
-      alt: "Azure",
-    },
-    {
-      path: "/node-js.svg",
-      alt: "Node js",
-    },
-    {
-      path: "/vue.svg",
-      alt: "Vue js",
-    },
-    {
-      path: "/java.svg",
-      alt: "Java"
-    }
+  const technologies = [
+    { src: "/react.svg", alt: "React" },
+    { src: "/javascript.svg", alt: "JavaScript" },
+    { src: "/angular.svg", alt: "Angular" },
+    { src: "/aws.svg", alt: "AWS" },
+    { src: "/d3.svg", alt: "D3" },
+    { src: "/flutter.svg", alt: "Flutter" },
+    { src: "/gcp.svg", alt: "Google Cloud" },
+    { src: "/css.svg", alt: "CSS" },
+    { src: "/html.svg", alt: "HTML" },
+    { src: "/azure.svg", alt: "Azure" },
+    { src: "/node-js.svg", alt: "Node.js" },
+    { src: "/vue.svg", alt: "Vue.js" },
+    { src: "/java.svg", alt: "Java" },
   ];
+
   return (
-    <div className="flex flex-col items-center gap-y-10">
-      <div className="flex flex-col items-center">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Technologies
+    <div className="bg-[#4F46E5] py-12">
+      <div className="max-w-7xl mx-auto px-4 flex flex items-center">
+        <h2 className="text-white text-4xl font-bold mb-8">
+          Technologies we use
         </h2>
-        <p className="mt-2 text-lg leading-8 text-gray-600">
-          Technologies we use to develop systems
-        </p>
-      </div>
-      <div className="flex items-center justify-center">
-        <div className="overflow-hidden">
-          <div className="flex items-center justify-end space-x-[100px] animate-loop-scroll">
-            {images.map((image, index) => (
-              <div key={index}>
-                <img
-                  loading="lazy"
-                  src={image.path}
-                  style={{maxWidth: '250px'}}
-                  className="w-auto h-[65px] max-w-auto"
-                  alt={image.alt}
-                />
-              </div>
-            ))}
-          </div>
+        <div className="flex flex-wrap justify-center gap-6">
+          {technologies.map((tech, index) => (
+            <div key={index} className="flex justify-center items-center">
+              <img
+                src={tech.src}
+                alt={tech.alt}
+                className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 object-contain"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>
@@ -85,3 +38,4 @@ const Schedule = () => {
 };
 
 export default Schedule;
+

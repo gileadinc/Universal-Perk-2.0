@@ -23,7 +23,7 @@ const Footer = () => {
   };
 
   return (
-    <footer aria-labelledby="footer-heading" className="bg-gray-900">
+    <footer aria-labelledby="footer-heading" className="bg-[#4F46E5]">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
