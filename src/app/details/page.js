@@ -78,8 +78,9 @@ const Details = () => {
                     <span className="sr-only">Universal Perk</span>
                     <img
                       alt="Universal Perk Logo"
-                      src="https://www.universalperk.com/images/logo4.png"
-                      className="h-10 w-auto md:h-20"
+                      src="/logo.svg"
+                      className="h-12 w-auto"
+                      
                     />
                   </a>
                 </div>
@@ -117,8 +118,8 @@ const Details = () => {
                       <span className="sr-only">Universal Perk</span>
                       <img
                         alt="Universal Perk Logo"
-                        src="https://www.universalperk.com/images/logo4.png"
-                        className="h-8 w-auto"
+                        src="/logo.svg"
+                        className="h-10 w-10"
                       />
                     </a>
                     <button

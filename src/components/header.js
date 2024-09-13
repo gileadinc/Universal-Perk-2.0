@@ -39,8 +39,10 @@ const Header = () => {
             <span className="sr-only">Universal Perk</span>
             <img
               alt=""
-              src="https://www.universalperk.com/images/logo4.png"
-              className="h-20 w-auto"
+              src="/logo.svg"
+              color="#4F46E5"
+              className="h-10 w-auto text-[#4F46E5]"
+
             />
           </a>
         </div>
@@ -89,8 +91,9 @@ const Header = () => {
               <span className="sr-only">Universal Perk</span>
               <img
                 alt=""
-                src="https://www.universalperk.com/images/logo4.png"
-                className="h-8 w-auto"
+                src="/logo.svg"
+                color="#4F46E5"
+                className="h-8 w-auto text-[#4F46E5]"
               />
             </a>
             <button
