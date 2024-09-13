@@ -77,7 +77,7 @@ export default function About() {
                   <span className="sr-only">Universal Perk</span>
                   <img
                     alt=""
-                    src="https://www.universalperk.com/images/logo4.png"
+                    src="/logo.svg"
                     className="h-20 w-auto"
                   />
                 </a>
@@ -116,7 +116,7 @@ export default function About() {
                     <span className="sr-only">Universal Perk</span>
                     <img
                       alt=""
-                      src="https://www.universalperk.com/images/logo4.png"
+                      src="/logo.svg"
                       className="h-8 w-auto"
                     />
                   </a>
@@ -179,7 +179,7 @@ export default function About() {
         </div>
         <div className="w-full flex justify-start ">
           <p className="text-[#6B7280] text-base sm:text-[24px] font-[400]">
-            mission is to empower businesses by delivering cutting-edge
+             is to empower businesses by delivering cutting-edge
             technology and tailored software solutions that help them thrive in
             today’s dynamic market. With a client-focused approach, we
             specialize in enhancing operational efficiency, improving business
