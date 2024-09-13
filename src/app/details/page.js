@@ -2,12 +2,17 @@
 
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import KeyBenefits from "@/components/keyframes";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { ArrowLeft, Menu, X } from "lucide-react";
 import React, { useState } from "react";
 
 const Details = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const data = JSON.parse(localStorage.getItem("services"));
+
+  console.log(data, "local storage data");
   const navigation = [
     { name: "Home", href: "/" },
     { name: "Services", href: "/" },
@@ -64,15 +69,15 @@ const Details = () => {
             <header className="absolute inset-x-0 top-0 z-50">
               <nav
                 aria-label="Global"
-                className="flex items-center justify-between p-6 lg:px-8"
+                className="flex items-center justify-between p-4 md:p-6 lg:px-8"
               >
                 <div className="flex lg:flex-1">
                   <a href="#" className="-m-1.5 p-1.5">
                     <span className="sr-only">Universal Perk</span>
                     <img
-                      alt=""
+                      alt="Universal Perk Logo"
                       src="https://www.universalperk.com/images/logo4.png"
-                      className="h-20 w-auto"
+                      className="h-10 w-auto md:h-20"
                     />
                   </a>
                 </div>
@@ -91,7 +96,7 @@ const Details = () => {
                     <a
                       key={item.name}
                       href={item.href}
-                      className={`text-sm font-semibold leading-6 text-white`}
+                      className="text-sm font-semibold leading-6 text-white"
                     >
                       {item.name}
                     </a>
@@ -109,7 +114,7 @@ const Details = () => {
                     <a href="#" className="-m-1.5 p-1.5">
                       <span className="sr-only">Universal Perk</span>
                       <img
-                        alt=""
+                        alt="Universal Perk Logo"
                         src="https://www.universalperk.com/images/logo4.png"
                         className="h-8 w-auto"
                       />
@@ -145,75 +150,101 @@ const Details = () => {
         </div>
 
         {/* Hero Section */}
-        <section className="bg-[#111827] text-white px-4 py-12 md:px-16">
-          <div className="text-left flex flex-col items-start w-full mb-12">
-            <ArrowLeft size={"40"} className="text-[#7B3FE4]"  />
-            <h1 className="text-2xl md:text-3xl font-bold mt-4">Our Services</h1>
+        <section className="bg-[#111827] text-white px-4 py-8 md:py-12 md:px-16">
+          <div className="flex flex-col items-start w-full mb-12">
+            <a href="/" className="cursor-pointer">
+              <ArrowLeft size={"40"} className="text-[#7B3FE4]" />
+            </a>
+            <h1 className="text-2xl md:text-3xl font-bold mt-4">
+              Our Services
+            </h1>
             <h2 className="text-4xl md:text-5xl font-bold mt-4">
-              Mobile App Development
+              {data.title}
             </h2>
-            <div>
-              <p className="mt-4 max-w-2xl mx-auto text-lg  text-gray-300">
-                At Universal Perk, we specialize in creating bespoke mobile apps
-                that cater to the specific needs of your business, whether
-                you’re in transportation, healthcare, retail, or any other
-                sector. Our apps are designed to be scalable, secure, and
-                feature-rich, ensuring your business stands out in a competitive
-                digital landscape.
-              </p>
+            <div className="max-w-7xl">
+              {data.subheader && (
+                <p className="mt-4 mx-auto text-lg text-gray-300">
+                  {data.subheader}
+                </p>
+              )}
             </div>
           </div>
         </section>
 
         {/* Main Content */}
-        <main className="bg-white px-4 py-12 md:px-16">
+        <main className="bg-white py-12">
           {/* Services Section */}
-          <section className="max-w-7xl mx-auto mb-16">
+          <section className="px-4 md:px-[7rem] mx-auto mb-16">
             <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-3">
-              {services.map((service, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-lg border border-gray-200 p-6 text-center shadow-lg flex flex-col items-start border border-gray-400"
-                >
-                  <div className="text-4xl mb-4 text-[#7B3FE4]">
-                    {service.icon}
+              {data.features &&
+                data.features?.map((service, index) => (
+                  <div
+                    key={index}
+                    className="bg-white rounded-lg border border-gray-200 p-6 text-center shadow-lg flex flex-col items-start border border-gray-400"
+                  >
+                    <div className="text-4xl mb-4 text-[#7B3FE4]">
+                      {/* {service.icon} */}
+                    </div>
+                    <h3 className="text-xl font-semibold mt-4 text-left text-[#4F46E5]">
+                      {service.title}
+                    </h3>
+                    <p className="mt-2 text-gray-600 text-left">
+                      {service.description}
+                    </p>
                   </div>
-                  <h3 className="text-xl font-semibold mt-4 text-left text-[#4F46E5]">
-                    {service.title}
-                  </h3>
-                  <p className="mt-2 text-gray-600 text-left">
-                    {service.description}
-                  </p>
-                </div>
-              ))}
+                ))}
             </div>
           </section>
 
           {/* Clients Section */}
-          <section className="px-8">
-            <h2 className="text-3xl font-bold text-left mb-8 text-[#4F46E5]">
-              Universal Perk has successfully collaborated with various esteemed
-              clients
-            </h2>
+          <section className="px-4 md:px-[7rem]">
+            {data.body && (
+              <h2 className="text-3xl font-bold text-left mb-8 text-[#4F46E5]">
+                {data.body}
+              </h2>
+            )}
             <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-3">
-              {clients.map((client, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-lg border border-gray-200 p-6 flex flex-col items-start shadow-lg"
-                >
-                  <h3 className="text-xl font-semibold text-[#4F46E5]">
-                    {client.name}
-                  </h3>
-                  <div className="max-w-md">
-                    <p className="mt-2 text-gray-600">{client.description}</p>
+              {data.innovation &&
+                data.innovation.map((client, index) => (
+                  <div
+                    key={index}
+                    className="bg-white rounded-lg border border-gray-200 p-6 flex flex-col items-start shadow-lg"
+                  >
+                    <h3 className="text-xl font-semibold text-[#4F46E5]">
+                      {client.title}
+                    </h3>
+                    <div className="max-w-md">
+                      <p className="mt-2 text-gray-600">{client.description}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+            </div>
+          </section>
+
+          <KeyBenefits />
+
+          <section className="bg-white py-8 px-4 sm:px-8 lg:px-16">
+            <div className="flex flex-col items-center justify-between sm:flex-row sm:space-x-4">
+              {/* Text Content */}
+              <div className="flex-1 text-center sm:text-left mb-4 sm:mb-0">
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+                  Looking for reliable IT services?
+                </h2>
+              </div>
+
+              {/* Button */}
+              <div>
+                <a
+                  href="#contact"
+                  className="inline-flex items-center justify-center px-6 py-3 text-white bg-[#4F46E5] rounded-full text-lg font-semibold shadow-md hover:bg-[#3b3fe4] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#4F46E5]"
+                >
+                  Contact us
+                </a>
+              </div>
             </div>
           </section>
         </main>
 
-        {/* Footer */}
         <Footer />
       </div>
     </>

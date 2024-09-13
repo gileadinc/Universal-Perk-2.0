@@ -215,7 +215,7 @@ export default function About() {
           <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((feature) => (
               <div key={feature.title} className="pt-6">
-                <div className="flow-root rounded-lg bg-gray-50 px-6 pb-8 bg-[#111827]">
+                <div className="flow-root rounded-lg px-6 pb-8 bg-[#111827]">
                   <div className="-mt-6 py-10">
                     <h3 className="mt-8 text-lg font-semibold leading-8 tracking-tight text-white">
                       {feature.title}
