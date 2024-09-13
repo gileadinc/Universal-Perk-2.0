@@ -1,16 +1,18 @@
 "use client";
-
 import Footer from "@/components/footer";
-import Header from "@/components/header";
 import KeyBenefits from "@/components/keyframes";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { ArrowLeft, Menu, X } from "lucide-react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Details = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const data = JSON.parse(localStorage.getItem("services"));
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    setData(JSON.parse(localStorage.getItem("services")));
+  }, []);
 
   console.log(data, "local storage data");
   const navigation = [
