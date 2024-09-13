@@ -12,7 +12,7 @@ const features = [
   {
     name: "AFT Labour Union",
     description: "What has been worked on",
-    logo: "/bayer-logo.jpeg",
+    // logo: "/bayer-logo.jpeg",
     extraContent:
       "Developed an intuitive drag-and-drop form builder, enabling users to create custom forms effortlessly. This tool allows users to design, customize, and deploy forms tailored to their specific needs, streamlining data collection and enhancing workflow efficiency. The builder supports a variety of form elements, including text fields, dropdowns, checkboxes, and more, all of which can be arranged and configured with ease. Users can seamlessly integrate the generated forms into their projects, ensuring that they have a powerful tool to enhance their data-driven operations and improve productivity.",
   },
@@ -64,7 +64,7 @@ export default function Features() {
           >
             <div>
               <div className="flex flex-col items-start">
-                <div className="h-10 w-10">
+                <div className="h-20 w-20">
                   <img
                     src={feature.logo}
                     className="text-blue-600 object-fit"
