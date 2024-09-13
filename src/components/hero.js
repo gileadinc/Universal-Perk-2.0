@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-import Typewriter from "./TypeWritter";
+
 const Hero = () => {
   const scrollToSection = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });

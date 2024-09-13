@@ -1,93 +1,94 @@
 import {
-  BookUser,
+  ChevronDown,
   Cloud,
-  Cog,
-  FileText,
-  MonitorSpeaker,
-  Wrench,
-} from "lucide-react";
-import React from "react";
+  Code,
+  Pencil,
+  Server,
+  Shield,
+  Smartphone,
+  UserCheck,
+} from "lucide-react"; // Example icons
 
-const features = [
+const services = [
   {
-    name: "Comprehensive ERP Development ",
+    title: "Mobile App Development",
+    subtitle: "Android & iOS",
     description:
-      "Tailored to fit your unique workflows, our custom project management software streamlines tasks, enhances collaboration, and boosts productivity, giving you full control over your projects from start to finish.",
-    icon: Cloud,
+      "Benefit from ongoing technical support with mobile app development. CRM system ensures efficient and effective user interactions.",
+    icon: <Smartphone className="h-10 w-10 text-blue-600" />,
   },
   {
-    name: "Customer Relationship Management",
+    title: "Web App Development",
+    subtitle: "Web-based Applications",
     description:
-      "Enhance your customer interactions and drive growth with our versatile CRM solutions. Ideal for all industries, our systems streamline processes, boost satisfaction, and support your business goals with customizable features designed for your unique needs.",
-    icon: MonitorSpeaker,
+      "Benefit from ongoing technical support for web applications. CRM ensures efficient and effective user interactions.",
+    icon: <Code className="h-10 w-10 text-blue-600" />,
   },
   {
-    name: "Website Development",
+    title: "Custom Software Solutions",
+    subtitle: "Tailored Solutions",
     description:
-      "Our Web Development service delivers tailored, high-performance websites designed to meet your unique business needs. From intuitive design to seamless functionality, we create engaging online experiences that drive results.",
-    icon: Wrench,
+      "Benefit from ongoing technical support for custom software. CRM ensures efficient and effective operations.",
+    icon: <Server className="h-10 w-10 text-blue-600" />,
   },
   {
-    name: "Mobile Development",
+    title: "Cloud Solutions and Managed IT Services",
+    subtitle: "Cloud Integration",
     description:
-      "Our Mobile Development service delivers high-performance, user-friendly apps for Android and iOS, tailored to your business needs",
-    icon: FileText,
+      "Benefit from ongoing technical support for cloud services. CRM ensures efficient and effective infrastructure management.",
+    icon: <Cloud className="h-10 w-10 text-blue-600" />,
   },
   {
-    name: "UI/UX Design",
+    title: "UI/UX Design",
+    subtitle: "User Experience",
     description:
-      "Crafting intuitive and visually appealing interfaces that enhance user experience, ensuring seamless interaction and engagement across all digital platforms.",
-    icon: BookUser,
+      "Benefit from ongoing technical support with UI/UX design. CRM ensures efficient and effective user interfaces.",
+    icon: <Pencil className="h-10 w-10 text-blue-600" />,
   },
   {
-    name: "Comprehensive Cloud Architecture ",
+    title: "Cybersecurity",
+    subtitle: "Security Solutions",
     description:
-      "Streamline your cloud operations with our all-in-one service, including Cloud Cost Optimization, seamless Cloud Migration, and efficient Cloud Integration to maximize performance and minimize expenses.",
-    icon: Cog,
+      "Benefit from ongoing technical support with cybersecurity. CRM ensures efficient and effective protection.",
+    icon: <Shield className="h-10 w-10 text-blue-600" />,
+  },
+  {
+    title: "Customer Relationship Management",
+    subtitle: "CRM Solutions",
+    description:
+      "Benefit from ongoing technical support with CRM systems. Ensures efficient and effective user interactions.",
+    icon: <UserCheck className="h-10 w-10 text-blue-600" />,
   },
 ];
 
-const Features = () => {
+export default function Features() {
   return (
-    <div className="relative bg-white py-4" id="features">
-      <div className="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8">
-        <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Our capabilities
-        </p>
-        <p className="mx-auto mt-5 max-w-prose text-xl text-gray-500">
-          Our comprehensive range of services is designed to support
-          international organizations in achieving their mission more
-          efficiently
-        </p>
-        <div className="mt-20">
-          <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
-            {features.map((feature) => (
-              <div key={feature.name} className="pt-6">
-                <div className="flow-root rounded-lg bg-gray-50 px-6 pb-8">
-                  <div className="-mt-6">
-                    <div>
-                      <span className="inline-flex items-center justify-center rounded-xl bg-indigo-500 p-3 shadow-lg">
-                        <feature.icon
-                          aria-hidden="true"
-                          className="h-8 w-8 text-white"
-                        />
-                      </span>
-                    </div>
-                    <h3 className="mt-8 text-lg font-semibold leading-8 tracking-tight text-gray-900">
-                      {feature.name}
-                    </h3>
-                    <p className="mt-5 text-base leading-7 text-gray-600">
-                      {feature.description}
-                    </p>
-                  </div>
-                </div>
+    <div className="max-w-7xl mx-auto px-4 py-12">
+      <h2 className="text-4xl font-bold text-center text-[#4F46E5] mb-12">
+        Our Capabilities
+      </h2>
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {services.map((service, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-lg shadow-md p-6 border border-gray-200 flex flex-col justify-between hover:shadow-lg transition-shadow duration-300"
+          >
+            <div className="flex flex-col items-start space-y-4">
+              {service.icon}
+              <div className="w-full">
+                <h3 className="text-lg font-semibold text-left">
+                  {service.title}
+                </h3>
+                <p className="text-sm text-gray-500">{service.subtitle}</p>
               </div>
-            ))}
+            </div>
+            <p className="mt-4 text-gray-600">{service.description}</p>
+            <button className="mt-4 text-blue-600 text-sm flex items-center focus:outline-none">
+              Show More <ChevronDown className="ml-2 h-4 w-4" />
+            </button>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );
-};
-
-export default Features;
+}

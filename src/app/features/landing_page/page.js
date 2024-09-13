@@ -5,11 +5,12 @@ import { useRef, useState } from "react";
 import Hero from "@/components/hero";
 import Header from "@/components/header";
 import Clients from "@/components/clients";
-import Features from "@/components/features";
+
 import Projects from "@/components/projects";
 import Schedule from "@/components/schedule";
 import Contact from "@/components/contact_us";
 import Footer from "@/components/footer";
+import Features from "@/components/features";
 
 const LandingPage = () => {
   const scrollToSection = (sectionRef) => {

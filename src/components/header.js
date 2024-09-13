@@ -10,7 +10,7 @@ const navigation = [
   { name: "Services", href: "features" },
   { name: "Portfolio", href: "projects" },
   { name: "Contact us", href: "contact" },
-  { name: "about", link: "about" },
+  { name: "About", link: "about" },
 ];
 
 const Header = () => {
