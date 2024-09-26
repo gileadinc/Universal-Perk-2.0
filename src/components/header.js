@@ -47,7 +47,7 @@ const navigation = [
 
   { name: "Portfolio", href: "projects" },
   { name: "Contact us", href: "contact" },
-  { name: "About", link: "About" },
+  { name: "About", link: "about" },
 ];
 
 const services = [

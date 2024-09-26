@@ -69,7 +69,7 @@ const Details = () => {
       <div className="font-sans text-gray-800">
         <Header />
 
-        {/* Hero Section */}
+        
         <section className="bg-[#111827] text-white px-4 mt-20 py-8 md:py-12 md:px-16">
           <div className="flex flex-col items-start w-full mb-12">
             <a href="/" className="cursor-pointer">
