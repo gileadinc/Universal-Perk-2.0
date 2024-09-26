@@ -1,5 +1,3 @@
-"use client";
-
 import { Building, Mail, Phone } from "lucide-react";
 
 const navigation = {
@@ -103,7 +101,7 @@ const Footer = () => {
               </dl>
             </div>
           </div>
-          <div className="mt-10 xl:mt-0">
+          {/* <div className="mt-10 xl:mt-0">
             <h3 className="text-sm font-semibold leading-6 text-white">
               Subscribe to our newsletter
             </h3>
@@ -133,7 +131,7 @@ const Footer = () => {
                 </button>
               </div>
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
