@@ -52,7 +52,7 @@ const Footer = () => {
             </div>
 
             <div>
-              <h3 className="text-sm font-semibold leading-6 text-white">
+              <h3 className="text-sm font-semibold leading-6 text-white" id="contact">
                 Contact
               </h3>
               <dl className="mt-10 space-y-4 text-base leading-7 text-white">

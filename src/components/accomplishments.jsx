@@ -28,7 +28,7 @@ function Accomplishments() {
     },
   ];
   return (
-    <div>
+    <div id="portfolio">
       <div className="text-center mb-6">
         <h2 className="text-4xl md:text-6xl font-extrabold text-gray-900">
           Accomplishments

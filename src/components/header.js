@@ -45,7 +45,7 @@ import React, { useState } from "react";
 const navigation = [
   { name: "Home", href: "home" },
 
-  { name: "Portfolio", href: "projects" },
+  { name: "Portfolio", href: "portfolio" },
   { name: "Contact us", href: "contact" },
   { name: "About", link: "about" },
 ];
@@ -311,6 +311,8 @@ const Header = () => {
 
   const handleNavigation = (link) => {
     console.log(link, "link");
+
+  
     router.push(`/${link}`);
   };
   return (
