@@ -4,7 +4,7 @@ const Points = () => {
   return (
     <div className="px-10 lg:px-0 flex w-full flex-col lg:flex-row lg:gap-x-4 justify-center">
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:px-40 w-full items-center justify-center">
-        <div className="bg-[#FBBC05] w-full rounded-lg shadow-md p-6 border border-gray-200 flex flex-col justify-between hover:shadow-lg transition-shadow duration-300">
+        <div className="bg-[#FBBC05] w-full rounded-lg shadow-md p-6 border border-gray-200 flex flex-col justify-between hover:shadow-lg transition-shadow duration-300 min-h-[350px]">
           <div className="flex flex-col items-start space-y-4">
             <DevicePhoneMobileIcon className="h-10 h-10" />
             <div className="w-full">
@@ -22,55 +22,51 @@ const Points = () => {
           </p>
         </div>
 
-        <div className="bg-[#001A43] rounded-lg shadow-md p-6 border border-gray-200 flex flex-col justify-between hover:shadow-lg transition-shadow duration-300">
+        <div className="bg-[#001A43] rounded-lg shadow-md p-6 border border-gray-200 flex flex-col justify-between hover:shadow-lg transition-shadow duration-300 min-h-[350px]">
           <div className="flex flex-col items-start space-y-4">
             <DevicePhoneMobileIcon className="h-10 h-10 text-white" />
             <div className="w-full">
               <h3 className="text-lg text-white font-semibold text-left">
-                Accurate Issue Reporting
+                Balancing Rentals and Reporting
               </h3>
             </div>
           </div>
           <p className="mt-4 text-white">
-            The challenge was ensuring that users could provide accurate details
-            about when and where the issue with the car occurred. This was
-            solved by integrating Google Maps to allow users to drop a pin at
-            the exact location of the incident and capture the time of the
-            event.
+            It was important to balance the user experience between the car
+            rental functionality and the issue reporting process. To address
+            this, distinct workflows were designed, separating car booking and
+            issue reporting to avoid
           </p>
         </div>
-        <div className="bg-[#001A43] rounded-lg shadow-md p-6 border border-gray-200 flex flex-col justify-between hover:shadow-lg transition-shadow duration-300">
+        <div className="bg-[#001A43] rounded-lg shadow-md p-6 border border-gray-200 flex flex-col justify-between hover:shadow-lg transition-shadow duration-300 min-h-[350px]">
           <div className="flex flex-col items-start space-y-4">
             <DevicePhoneMobileIcon className="h-10 h-10 text-white" />
             <div className="w-full">
               <h3 className="text-lg text-white font-semibold text-left">
-                Accurate Issue Reporting
+                Seamless Communication
               </h3>
             </div>
           </div>
           <p className="mt-4 text-white">
-            The challenge was ensuring that users could provide accurate details
-            about when and where the issue with the car occurred. This was
-            solved by integrating Google Maps to allow users to drop a pin at
-            the exact location of the incident and capture the time of the
-            event.
+            Initially, users experienced delays in coordinating with owners or
+            admins. This was addressed by integrating real-time chat features,
+            making communication faster and more direct.
           </p>
         </div>
-        <div className="bg-[#FBBC05] rounded-lg shadow-md p-6 border border-gray-200 flex flex-col justify-between hover:shadow-lg transition-shadow duration-300">
+        <div className="bg-[#FBBC05] rounded-lg shadow-md p-6 border border-gray-200 flex flex-col justify-between hover:shadow-lg transition-shadow duration-300 min-h-[350px]">
           <div className="flex flex-col items-start space-y-4">
             <DevicePhoneMobileIcon className="h-10 h-10" />
             <div className="w-full">
               <h3 className="text-lg font-semibold text-left">
-                Accurate Issue Reporting
+                Admin Overload with Issue Reports
               </h3>
             </div>
           </div>
           <p className="mt-4 text-black">
-            The challenge was ensuring that users could provide accurate details
-            about when and where the issue with the car occurred. This was
-            solved by integrating Google Maps to allow users to drop a pin at
-            the exact location of the incident and capture the time of the
-            event.
+            With the potential for numerous car-related reports, admins could be
+            overwhelmed. To manage this, filters and prioritization options were
+            added to the admin dashboard, allowing reports to be categorized and
+            addressed based on urgency.
           </p>
         </div>
       </div>

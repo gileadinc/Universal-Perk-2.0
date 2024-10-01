@@ -8,13 +8,7 @@ import {
   MenuItem,
   MenuItems,
 } from "@headlessui/react";
-import { PencilSquareIcon } from "@heroicons/react/16/solid";
-import { DocumentDuplicateIcon } from "@heroicons/react/16/solid";
-import { ArrowRightCircleIcon } from "@heroicons/react/16/solid";
-import { UserPlusIcon } from "@heroicons/react/16/solid";
-import { HeartIcon } from "@heroicons/react/16/solid";
-import { TrashIcon } from "@heroicons/react/16/solid";
-import { ArchiveBoxIcon } from "@heroicons/react/16/solid";
+
 import { ChevronDownIcon } from "@heroicons/react/16/solid";
 import {
   BarChart,
@@ -44,9 +38,7 @@ import React, { useState } from "react";
 
 const navigation = [
   { name: "Home", href: "home" },
-
   { name: "Portfolio", href: "portfolio" },
-  { name: "Contact us", href: "contact" },
   { name: "About", link: "about" },
 ];
 
@@ -312,7 +304,6 @@ const Header = () => {
   const handleNavigation = (link) => {
     console.log(link, "link");
 
-  
     router.push(`/${link}`);
   };
   return (
@@ -321,22 +312,6 @@ const Header = () => {
         aria-label="Global"
         className="flex items-center justify-between p-6 lg:px-8"
       >
-        {/* <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Universal Perk</span>
-            <img
-              alt=""
-              src="/logo.svg"
-              color="#4F46E5"
-              className="h-10 w-auto text-[#4F46E5]"
-
-              src="/logo.svg"
-              color="#4F46E5"
-              className="h-10 w-auto text-[#4F46E5]"
-
-            />
-          </a>
-        </div> */}
         <div className="flex lg:hidden">
           <button
             type="button"
@@ -348,57 +323,61 @@ const Header = () => {
           </button>
         </div>
         <div className="hidden lg:flex justify-center w-[90%] lg:gap-x-12">
-          {navigation.map((item) => (
-            <a
-              key={item.name}
-              href={""}
-              onClick={
-                !item.link
-                  ? (e) => {
-                      e.preventDefault();
-                      scrollToSection(item.href);
-                    }
-                  : (e) => {
-                      e.preventDefault();
-                      handleNavigation(item.link);
-                    }
-              }
-              className={`text-sm font-semibold leading-6 `}
-            >
-              {item.name}
-            </a>
+          {navigation.map((item, index) => (
+            <>
+              <a
+                key={item.name}
+                href={""}
+                onClick={
+                  !item.link
+                    ? (e) => {
+                        e.preventDefault();
+                        scrollToSection(item.href);
+                      }
+                    : (e) => {
+                        e.preventDefault();
+                        handleNavigation(item.link);
+                      }
+                }
+                className={`text-sm font-semibold leading-6 `}
+              >
+                {item.name}
+              </a>
+
+              {index === 0 && (
+                <Menu as="div" className="relative inline-block text-left">
+                  <div>
+                    <MenuButton className="inline-flex w-full justify-center items-start gap-x-1.5 rounded-md bg-white px-3 text-sm font-semibold text-gray-900">
+                      Case Studies
+                      <ChevronDownIcon
+                        aria-hidden="true"
+                        className="-mr-1 h-5 w-5 text-gray-400"
+                      />
+                    </MenuButton>
+                  </div>
+
+                  <MenuItems
+                    transition
+                    className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+                  >
+                    <div className="py-1">
+                      {services.map((service) => (
+                        <MenuItem key={service.title}>
+                          <a
+                            onClick={() => handleClick(service)}
+                            className="group flex cursor-pointer items-center px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+                          >
+                            {service.icon}
+                            {service.title}
+                          </a>
+                        </MenuItem>
+                      ))}
+                    </div>
+                  </MenuItems>
+                </Menu>
+              )}
+            </>
           ))}
-
-          <Menu as="div" className="relative inline-block text-left">
-            <div>
-              <MenuButton className="inline-flex w-full justify-center items-start gap-x-1.5 rounded-md bg-white px-3 text-sm font-semibold text-gray-900">
-                Services
-                <ChevronDownIcon
-                  aria-hidden="true"
-                  className="-mr-1 h-5 w-5 text-gray-400"
-                />
-              </MenuButton>
-            </div>
-
-            <MenuItems
-              transition
-              className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
-            >
-              <div className="py-1">
-                {services.map((service) => (
-                  <MenuItem key={service.title}>
-                    <a
-                      onClick={() => handleClick(service)}
-                      className="group flex cursor-pointer items-center px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                    >
-                      {service.icon}
-                      {service.title}
-                    </a>
-                  </MenuItem>
-                ))}
-              </div>
-            </MenuItems>
-          </Menu>
         </div>
       </nav>
       <Dialog

@@ -29,7 +29,7 @@ export default function Client() {
             <h1 className="mt-10 text-xl font-bold tracking-tight text-gray-900 sm:text-6xl">
             Client Overview
             </h1>
-            <p className="mt-6 text-[20px] leading-8 text-gray-600">
+            <p className="mt-6 text-[25px] leading-8 text-gray-600">
             DASGUZO is an innovative company dedicated to reshaping the car rental experience by connecting car owners with renters. The platform allows users to rent vehicles from local owners, while offering owners an easy way to generate income from unused cars. Alongside the rental service, DASGUZO integrates an issue reporting system, allowing users to report problems with the car they rented, helping maintain a high standard of service and vehicle quality.
   
             </p>

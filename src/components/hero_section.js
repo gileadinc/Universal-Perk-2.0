@@ -6,7 +6,7 @@ export default function Hero() {
           <h1 className="mt-10 text-xl font-bold tracking-tight text-gray-900 sm:text-6xl">
             DASGUZO: Revolutionizing Peer-to-Peer Car Rentals
           </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-[25px] leading-8 text-gray-600">
             DASGUZO aimed to create a streamlined peer-to-peer (P2P) car rental
             platform where users could rent vehicles from local owners with
             ease. Additionally, DASGUZO wanted to empower users to report any
