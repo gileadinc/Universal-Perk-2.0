@@ -1,18 +1,12 @@
 "use client";
-import Accomplishments from "@/components/accomplishments";
-import Client from "@/components/client";
-import FeaturesSection from "@/components/features_section";
 import Footer from "@/components/footer";
-import Header from "@/components/header";
-import Hero from "@/components/hero_section";
-import Points from "@/components/points";
-import Requirements from "@/components/requirements";
-import Tools from "@/components/tools";
-
-import { useRef, useState } from "react";
-
-
-
+import Header from "@/components/header_section";
+import Hero from "@/components/hero";
+import Clients from "@/components/clients";
+import Projects from "@/components/projects";
+import Schedule from "@/components/schedule";
+import Contact from "@/components/contact_us";
+import Features from "@/components/features";
 
 const LandingPage = () => {
   const scrollToSection = (sectionRef) => {
@@ -21,13 +15,14 @@ const LandingPage = () => {
   return (
     <div className="bg-white">
       <Header />
-      <Hero />
-      <Client />
-      <FeaturesSection />
-      <Requirements />
-      <Points />
-      <Tools />
-      <Accomplishments />
+      <main className="isolate">
+        <Hero />
+        <Clients />
+        <Features />
+        <Projects />
+        <Schedule />
+        <Contact />
+      </main>
       <Footer />
     </div>
   );
