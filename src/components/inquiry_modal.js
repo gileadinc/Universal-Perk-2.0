@@ -1,4 +1,3 @@
-
 import { Dialog } from "@headlessui/react";
 import { X } from "lucide-react";
 import { useState } from "react";
@@ -13,6 +12,7 @@ const InquiryModal = ({ isOpen, onClose }) => {
     timeline: '',
     name: '',
     email: '',
+    phone: '', // Added phone number field
     company: '',
   });
 
@@ -26,7 +26,7 @@ const InquiryModal = ({ isOpen, onClose }) => {
 
   const validateStep = (currentStep) => {
     const newErrors = {};
-    
+
     if (currentStep === 1) {
       if (!formData.projectType) newErrors.projectType = 'Please select a project type';
       if (!formData.description) newErrors.description = 'Please provide a project description';
@@ -39,6 +39,11 @@ const InquiryModal = ({ isOpen, onClose }) => {
         newErrors.email = 'Email is required';
       } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
         newErrors.email = 'Please enter a valid email';
+      }
+      if (!formData.phone) {
+        newErrors.phone = "Phone number is required";
+      } else if (!/^\+?[\d\s-]{10,}$/.test(formData.phone)) {
+        newErrors.phone = "Please enter a valid phone number";
       }
       if (!formData.company) newErrors.company = 'Company name is required';
     }
@@ -55,11 +60,28 @@ const InquiryModal = ({ isOpen, onClose }) => {
 
   const prevStep = () => setStep(step - 1);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (validateStep(3)) {
-      console.log(formData);
-      onClose();
+      try {
+        const response = await fetch('/api/send-inquiry', { // Replace with your actual email sending logic
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+
+        if (response.ok) {
+          alert('Inquiry submitted successfully!');
+          onClose();
+        } else {
+          alert('Failed to submit inquiry. Please try again.');
+        }
+      } catch (error) {
+        console.error('Error submitting inquiry:', error);
+        alert('Failed to submit inquiry. Please try again.');
+      }
     }
   };
 
@@ -213,6 +235,19 @@ const InquiryModal = ({ isOpen, onClose }) => {
                       placeholder="Enter your email"
                     />
                     {errors.email && <p className="mt-2 text-sm text-red-600">{errors.email}</p>}
+                  </div>
+
+                  <div>
+                    <label className="block mb-2 font-medium">Phone Number</label> {/* Added Phone Number Label */}
+                    <input
+                      type="tel"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleInputChange}
+                      className={`w-full border rounded-lg p-3 ${errors.phone ? 'border-red-300' : 'border-gray-200'}`}
+                      placeholder="Enter your phone number"
+                    />
+                    {errors.phone && <p className="mt-2 text-sm text-red-600">{errors.phone}</p>}
                   </div>
 
                   <div>
