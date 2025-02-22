@@ -4,46 +4,46 @@ import React from 'react';
 const ProcessSection = () => {
   const steps = [
     {
-      title: "Discovery",
-      description: "We analyze your business needs, customer pain points, and identify opportunities where AI can create the most impact.",
+      title: "Discovery & Architecture Planning",
+      description: "Our technical team conducts in-depth analysis of your existing infrastructure, data sources, and integration requirements to architect an optimal AI solution.",
       icon: "🔍",
-      image: "/form-designer.png"
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&auto=format&fit=crop&q=60"
     },
     {
-      title: "Configuration & Success Metrics",
-      description: "We establish clear KPIs, configure integration points, and define the metrics that will measure success.",
-      icon: "📊",
-      image: "/report.png"
+      title: "Technical Configuration & KPI Definition",
+      description: "We establish integration endpoints, define API specifications, configure cloud infrastructure, and implement monitoring systems for performance tracking.",
+      icon: "⚙️",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=60"
     },
     {
-      title: "AI Development",
-      description: "Our team develops custom RAG systems, builds knowledge bases, and engineers prompts for optimal AI performance.",
-      icon: "🤖",
-      image: "/lambda.png"
+      title: "RAG System Development",
+      description: "Our engineers develop custom Retrieval Augmented Generation systems, implement vector databases, and fine-tune Large Language Models for your specific use case.",
+      icon: "🧠",
+      image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&auto=format&fit=crop&q=60"
     },
     {
-      title: "Deployment",
-      description: "We deploy your AI agent across all channels - web, mobile, and voice - with seamless integration into your existing systems.",
+      title: "Enterprise Deployment",
+      description: "We implement secure CI/CD pipelines, configure load balancers, and deploy your AI agent across multiple environments with automated failover.",
       icon: "🚀",
-      image: "/phone.png"
+      image: "https://images.unsplash.com/photo-1667372459534-848ec00d4da6?w=800&auto=format&fit=crop&q=60"
     },
     {
-      title: "QA & Ongoing Support",
-      description: "Continuous testing, refinement, and enhancement of your AI agent to ensure peak performance.",
-      icon: "✨",
-      image: "/client.png"
+      title: "Performance Optimization & Maintenance",
+      description: "Continuous monitoring of response latency, token usage, and accuracy metrics. Regular model retraining and knowledge base updates ensure peak performance.",
+      icon: "📈",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=60"
     }
   ];
 
   return (
-    <div className="bg-white py-24">
+    <div className="bg-gradient-to-b from-gray-50 to-white py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center mb-20">
           <h2 className="text-4xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800 sm:text-5xl">
-            Our AI Agent Development Process
+            Enterprise AI Agent Development Pipeline
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            A systematic approach to building custom AI agents that deliver real business value
+            Our systematic approach to building production-ready AI agents with enterprise-grade reliability and performance
           </p>
         </div>
 
@@ -51,7 +51,7 @@ const ProcessSection = () => {
           {steps.map((step, index) => (
             <div key={step.title} className={`flex items-center gap-12 ${index % 2 === 1 ? 'flex-row-reverse' : ''}`}>
               <div className="flex-1">
-                <div className="rounded-2xl bg-white p-10 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <div className="rounded-2xl bg-white p-10 shadow-xl border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
                   <div className="flex items-center gap-4 mb-6">
                     <span className="text-4xl">{step.icon}</span>
                     <h3 className="text-2xl font-bold text-gray-900">{step.title}</h3>
@@ -61,7 +61,7 @@ const ProcessSection = () => {
               </div>
               
               <div className="flex-1">
-                <div className="relative rounded-2xl overflow-hidden shadow-xl">
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                   <img 
                     src={step.image} 
                     alt={step.title} 
@@ -75,8 +75,8 @@ const ProcessSection = () => {
         </div>
 
         <div className="mt-20 text-center">
-          <button className="rounded-[10rem] bg-blue-600 px-20 py-4 text-lg font-semibold text-white shadow-lg hover:bg-blue-500 hover:scale-105 transform transition-all duration-300 active:scale-95">
-            Start Building Your Custom AI Agent
+          <button className="rounded-[10rem] bg-gradient-to-r from-blue-600 to-blue-700 px-20 py-4 text-lg font-semibold text-white shadow-xl hover:from-blue-700 hover:to-blue-800 hover:scale-105 transform transition-all duration-300 active:scale-95">
+            Start Your Enterprise AI Integration
           </button>
         </div>
       </div>
