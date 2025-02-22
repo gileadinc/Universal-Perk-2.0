@@ -1,8 +1,9 @@
 "use client";
-import React from "react";
-
+import React, { useState } from "react";
+import InquiryModal from "./inquiry_modal";
 
 const Hero = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const scrollToSection = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
   };
@@ -24,18 +25,19 @@ const Hero = () => {
                 Close more deals, cut response times, and slash costs—24/7 automation that sounds human and works non-stop.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a
-                  onClick={() => scrollToSection("contact")}
+                <button
+                  onClick={() => setIsModalOpen(true)}
                   className="rounded-[10rem] bg-blue-600 cursor-pointer px-20 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                 >
                   Get a Quote
-                </a>
-                <a
-                  onClick={() => scrollToSection("contact")}
+                </button>
+                <button
+                  onClick={() => setIsModalOpen(true)}
                   className="rounded-[10rem] border-2 border-blue-600 cursor-pointer px-20 py-2.5 text-sm font-semibold text-blue-600 shadow-sm hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                 >
                   Talk to Us
-                </a>
+                </button>
+                <InquiryModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
               </div>
             </div>
           </div>
