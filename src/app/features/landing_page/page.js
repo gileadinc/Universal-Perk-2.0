@@ -7,6 +7,7 @@ import Projects from "@/components/projects";
 import Schedule from "@/components/schedule";
 import Contact from "@/components/contact_us";
 import Features from "@/components/features";
+import ValueProposition from "@/components/value_proposition";
 
 const LandingPage = () => {
   const scrollToSection = (sectionRef) => {
@@ -17,6 +18,7 @@ const LandingPage = () => {
       <Header />
       <main className="isolate">
         <Hero />
+        <ValueProposition /> 
         <Clients />
         <Features />
         <Projects />
