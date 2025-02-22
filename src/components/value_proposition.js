@@ -4,11 +4,7 @@ const ValueProposition = () => {
       <div className="mx-auto max-w-7xl px-6 lg:px-8 space-y-24">
         {/* First Value Proposition */}
         <div>
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-90"></div>
-            <img src="/client.png" alt="Customer Support" className="w-full h-48 object-cover rounded-t-2xl" />
-          </div>
-          <div className="mx-auto max-w-4xl text-center relative -mt-16">
+          <div className="mx-auto max-w-4xl text-center">
             <h2 className="text-4xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800 sm:text-5xl mb-4">
               High Customer Support Costs & Scalability Issues
             </h2>
@@ -60,7 +56,7 @@ const ValueProposition = () => {
             </div>
           </div>
           <div className="mt-8 text-center">
-            <button className="rounded-[10rem] border-2 border-blue-600 cursor-pointer px-20 py-2.5 text-lg font-semibold text-blue-600 shadow-sm hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+            <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-300 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 backdrop-blur-sm">
               <span className="mr-2">💰 </span>
               Cut Your Support Costs Today—Book a Free AI Demo
             </button>
@@ -69,11 +65,7 @@ const ValueProposition = () => {
 
         {/* Second Value Proposition */}
         <div>
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-90"></div>
-            <img src="/sales.png" alt="Sales Funnel" className="w-full h-48 object-cover rounded-t-2xl" />
-          </div>
-          <div className="mx-auto max-w-4xl text-center relative -mt-16">
+          <div className="mx-auto max-w-4xl text-center">
             <h2 className="text-4xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800 sm:text-5xl mb-4">
               Slow Lead Qualification & Sales Funnel Drop-Offs
             </h2>
@@ -125,7 +117,7 @@ const ValueProposition = () => {
             </div>
           </div>
           <div className="mt-8 text-center">
-            <button className="rounded-[10rem] border-2 border-blue-600 cursor-pointer px-20 py-2.5 text-lg font-semibold text-blue-600 shadow-sm hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+            <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-300 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 backdrop-blur-sm">
               <span className="mr-2">💰</span>
               Stop Losing Leads—Schedule a Free AI Consultation
             </button>
@@ -134,11 +126,7 @@ const ValueProposition = () => {
 
         {/* Third Value Proposition */}
         <div>
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-90"></div>
-            <img src="/calendar.png" alt="Appointment Scheduling" className="w-full h-48 object-cover rounded-t-2xl" />
-          </div>
-          <div className="mx-auto max-w-4xl text-center relative -mt-16">
+          <div className="mx-auto max-w-4xl text-center">
             <h2 className="text-4xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800 sm:text-5xl mb-4">
               Inefficiencies in Appointment Scheduling & Service Bookings
             </h2>
@@ -190,7 +178,7 @@ const ValueProposition = () => {
             </div>
           </div>
           <div className="mt-8 text-center">
-            <button className="rounded-[10rem] border-2 border-blue-600 cursor-pointer px-20 py-2.5 text-lg font-semibold text-blue-600 shadow-sm hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+            <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-300 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 backdrop-blur-sm">
               <span className="mr-2">💰</span>
               Automate Your Bookings—Try AI for Free
             </button>
@@ -199,11 +187,7 @@ const ValueProposition = () => {
 
         {/* Fourth Value Proposition */}
         <div>
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-90"></div>
-            <img src="/clock.png" alt="Wait Times" className="w-full h-48 object-cover rounded-t-2xl" />
-          </div>
-          <div className="mx-auto max-w-4xl text-center relative -mt-16">
+          <div className="mx-auto max-w-4xl text-center">
             <h2 className="text-4xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800 sm:text-5xl mb-4">
               Poor Customer Experience Due to Long Wait Times
             </h2>
@@ -255,7 +239,7 @@ const ValueProposition = () => {
             </div>
           </div>
           <div className="mt-8 text-center">
-            <button className="rounded-[10rem] border-2 border-blue-600 cursor-pointer px-20 py-2.5 text-lg font-semibold text-blue-600 shadow-sm hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+            <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-300 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 backdrop-blur-sm">
               <span className="mr-2">💰</span>
               Eliminate Long Wait Times—See AI in Action
             </button>
@@ -264,11 +248,7 @@ const ValueProposition = () => {
 
         {/* Fifth Value Proposition */}
         <div>
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-90"></div>
-            <img src="/globe.png" alt="Multilingual Support" className="w-full h-48 object-cover rounded-t-2xl" />
-          </div>
-          <div className="mx-auto max-w-4xl text-center relative -mt-16">
+          <div className="mx-auto max-w-4xl text-center">
             <h2 className="text-4xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800 sm:text-5xl mb-4">
               Lack of Multilingual & Inclusive Support
             </h2>
@@ -320,7 +300,7 @@ const ValueProposition = () => {
             </div>
           </div>
           <div className="mt-8 text-center">
-            <button className="rounded-[10rem] border-2 border-blue-600 cursor-pointer px-20 py-2.5 text-lg font-semibold text-blue-600 shadow-sm hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+            <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-300 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 backdrop-blur-sm">
               <span className="mr-2">💰</span>
               Reach More Customers with AI—Get a Free Demo
             </button>
