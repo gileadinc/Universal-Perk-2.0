@@ -5,7 +5,7 @@ const ValueProposition = () => {
         {/* First Value Proposition */}
         <div>
           <div className="relative mb-8">
-            <img src="/client.png" alt="Customer Support" className="w-full h-64 object-cover rounded-2xl shadow-lg" />
+            <img src={`https://picsum.photos/800/400?random=${Math.random()}`} alt="Customer Support" className="w-full h-64 object-cover rounded-2xl shadow-lg" />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white/90"></div>
           </div>
           <div className="mx-auto max-w-4xl text-center">
