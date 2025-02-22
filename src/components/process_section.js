@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const ProcessSection = () => {
@@ -7,7 +6,7 @@ const ProcessSection = () => {
       title: "Discovery & Architecture Planning",
       description: "Our technical team conducts in-depth analysis of your existing infrastructure, data sources, and integration requirements to architect an optimal AI solution.",
       icon: "🔍",
-      image: "https://images.unsplash.com/photo-1572177215152-32f247303126?w=800&auto=format&fit=crop&q=60"
+      image: "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?w=800&auto=format&fit=crop&q=60"
     },
     {
       title: "Technical Configuration & KPI Definition",
@@ -61,11 +60,11 @@ const ProcessSection = () => {
                   </div>
                   <p className="text-gray-600">{step.description}</p>
                 </div>
-                
+
                 <div className="w-16 h-16 rounded-full bg-blue-100 border-4 border-blue-600 flex items-center justify-center z-10">
                   <span className="text-xl font-bold text-blue-600">{index + 1}</span>
                 </div>
-                
+
                 <div className="flex-1">
                   <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
                     <img 
