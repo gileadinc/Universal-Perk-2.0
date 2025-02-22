@@ -55,6 +55,12 @@ const ValueProposition = () => {
               </div>
             </div>
           </div>
+          <div className="mt-8 text-center">
+            <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-200 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+              <span className="mr-2">📌</span>
+              Cut Your Support Costs Today—Book a Free AI Demo
+            </button>
+          </div>
         </div>
 
         {/* Second Value Proposition */}
@@ -109,6 +115,12 @@ const ValueProposition = () => {
                 </p>
               </div>
             </div>
+          </div>
+          <div className="mt-8 text-center">
+            <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-200 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+              <span className="mr-2">📌</span>
+              Stop Losing Leads—Schedule a Free AI Consultation
+            </button>
           </div>
         </div>
 
@@ -165,6 +177,12 @@ const ValueProposition = () => {
               </div>
             </div>
           </div>
+          <div className="mt-8 text-center">
+            <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-200 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+              <span className="mr-2">📌</span>
+              Automate Your Bookings—Try AI for Free
+            </button>
+          </div>
         </div>
 
         {/* Fourth Value Proposition */}
@@ -220,6 +238,12 @@ const ValueProposition = () => {
               </div>
             </div>
           </div>
+          <div className="mt-8 text-center">
+            <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-200 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+              <span className="mr-2">📌</span>
+              Eliminate Long Wait Times—See AI in Action
+            </button>
+          </div>
         </div>
 
         {/* Fifth Value Proposition */}
@@ -274,6 +298,12 @@ const ValueProposition = () => {
                 </p>
               </div>
             </div>
+          </div>
+          <div className="mt-8 text-center">
+            <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-200 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+              <span className="mr-2">📌</span>
+              Reach More Customers with AI—Get a Free Demo
+            </button>
           </div>
         </div>
       </div>
