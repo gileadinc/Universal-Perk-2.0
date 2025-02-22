@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { DollarSign, Clock, MessageSquare } from 'lucide-react';
 
@@ -34,23 +33,23 @@ Customer support is eating your budget alive. You’re constantly hiring, traini
                 <DollarSign className="h-8 w-8 text-blue-600 mt-1 shrink-0" />
                 <div>
                   <h4 className="font-semibold text-lg text-gray-900 mb-2">Cut Support Costs by 40%+</h4>
-                  <p className="text-gray-600">AI handles 80% of routine queries instantly, reducing your need for large teams.</p>
+                  <p className="text-gray-600">AI handles 80% of routine queries instantly, reducing your need for large teams</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start gap-4 bg-white rounded-xl p-6 shadow-sm">
                 <Clock className="h-8 w-8 text-blue-600 mt-1 shrink-0" />
                 <div>
-                  <h4 className="font-semibold text-lg text-gray-900 mb-2">24/7 Availability</h4>
-                  <p className="text-gray-600">Instant responses without overtime costs or wait times</p>
+                  <h4 className="font-semibold text-lg text-gray-900 mb-2">24/7 Service Without Overtime Costs</h4>
+                  <p className="text-gray-600">AI chatbots & voice agents work around the clock—no breaks, no sick days</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4 bg-white rounded-xl p-6 shadow-sm">
                 <MessageSquare className="h-8 w-8 text-blue-600 mt-1 shrink-0" />
                 <div>
-                  <h4 className="font-semibold text-lg text-gray-900 mb-2">Omnichannel Support</h4>
-                  <p className="text-gray-600">Seamless support across WhatsApp, Instagram, Facebook, and websites</p>
+                  <h4 className="font-semibold text-lg text-gray-900 mb-2">Omnichannel Support, No Extra Staffing</h4>
+                  <p className="text-gray-600">AI seamlessly responds on WhatsApp, Instagram, Messenger, and your website</p>
                 </div>
               </div>
             </div>
@@ -63,7 +62,7 @@ Customer support is eating your budget alive. You’re constantly hiring, traini
             <div>
               <h3 className="text-2xl font-semibold mb-2">Real Impact</h3>
               <p className="text-blue-50 text-lg">
-                SaaS companies using AI chatbots reduce support costs by up to 30-40% while maintaining fast response times.
+                A SaaS company cut support costs by 40% while improving response times—without hiring a single extra agent.
               </p>
             </div>
           </div>
