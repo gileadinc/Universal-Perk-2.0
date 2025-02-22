@@ -56,7 +56,7 @@ const ValueProposition = () => {
             </div>
           </div>
           <div className="mt-8 text-center">
-            <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-300 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 backdrop-blur-sm">
+            <button className="rounded-[10rem] border-2 border-blue-600 cursor-pointer px-20 py-2.5 text-lg font-semibold text-blue-600 shadow-sm hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
               <span className="mr-2">💰 </span>
               Cut Your Support Costs Today—Book a Free AI Demo
             </button>
@@ -117,7 +117,7 @@ const ValueProposition = () => {
             </div>
           </div>
           <div className="mt-8 text-center">
-            <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-300 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 backdrop-blur-sm">
+            <button className="rounded-[10rem] border-2 border-blue-600 cursor-pointer px-20 py-2.5 text-lg font-semibold text-blue-600 shadow-sm hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
               <span className="mr-2">💰</span>
               Stop Losing Leads—Schedule a Free AI Consultation
             </button>
@@ -178,7 +178,7 @@ const ValueProposition = () => {
             </div>
           </div>
           <div className="mt-8 text-center">
-            <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-300 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 backdrop-blur-sm">
+            <button className="rounded-[10rem] border-2 border-blue-600 cursor-pointer px-20 py-2.5 text-lg font-semibold text-blue-600 shadow-sm hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
               <span className="mr-2">💰</span>
               Automate Your Bookings—Try AI for Free
             </button>
@@ -239,7 +239,7 @@ const ValueProposition = () => {
             </div>
           </div>
           <div className="mt-8 text-center">
-            <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-300 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 backdrop-blur-sm">
+            <button className="rounded-[10rem] border-2 border-blue-600 cursor-pointer px-20 py-2.5 text-lg font-semibold text-blue-600 shadow-sm hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
               <span className="mr-2">💰</span>
               Eliminate Long Wait Times—See AI in Action
             </button>
@@ -300,7 +300,7 @@ const ValueProposition = () => {
             </div>
           </div>
           <div className="mt-8 text-center">
-            <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-300 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 backdrop-blur-sm">
+            <button className="rounded-[10rem] border-2 border-blue-600 cursor-pointer px-20 py-2.5 text-lg font-semibold text-blue-600 shadow-sm hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
               <span className="mr-2">💰</span>
               Reach More Customers with AI—Get a Free Demo
             </button>
