@@ -16,7 +16,7 @@ const ValueProposition = () => {
           <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
             <div className="rounded-2xl bg-white p-10 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
               <h3 className="text-2xl font-semibold text-red-600 mb-6 flex items-center">
-                <span className="text-3xl mr-2">📌</span> The Problem
+                <span className="text-3xl mr-2">🚨</span> The Problem
               </h3>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 Customer support is eating your budget alive. You're constantly hiring, training, and managing teams just to keep up—and still, customers sit in long queues. During peak seasons (Black Friday, tax season, product launches), your support system crashes, customers get frustrated, and you lose revenue.
@@ -24,8 +24,8 @@ const ValueProposition = () => {
             </div>
 
             <div className="rounded-2xl bg-white p-10 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-2xl font-semibold text-green-600 mb-6 flex items-center">
-                <span className="text-3xl mr-2">✅</span> The AI Solution
+              <h3 className="text-2xl font-semibold text-blue-600 mb-6 flex items-center">
+                <span className="text-3xl mr-2">💡</span> The AI Solution
               </h3>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -56,7 +56,7 @@ const ValueProposition = () => {
             </div>
           </div>
           <div className="mt-8 text-center">
-            <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-300 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 backdrop-blur-sm">
+            <button className="rounded-[10rem] border-2 border-blue-600 cursor-pointer px-20 py-4 text-lg font-semibold text-blue-600 shadow-sm hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 transform active:scale-95 focus-visible:outline-blue-600">
               <span className="mr-2">💰 </span>
               Cut Your Support Costs Today—Book a Free AI Demo
             </button>
@@ -77,7 +77,7 @@ const ValueProposition = () => {
           <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
             <div className="rounded-2xl bg-white p-10 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
               <h3 className="text-2xl font-semibold text-red-600 mb-6 flex items-center">
-                <span className="text-3xl mr-2">📌</span> The Problem
+                <span className="text-3xl mr-2">🚨</span> The Problem
               </h3>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 Visitors land on your website, but no one engages them fast enough—so they bounce and buy from competitors.
@@ -85,8 +85,8 @@ const ValueProposition = () => {
             </div>
 
             <div className="rounded-2xl bg-white p-10 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-2xl font-semibold text-green-600 mb-6 flex items-center">
-                <span className="text-3xl mr-2">✅</span> The AI Solution
+              <h3 className="text-2xl font-semibold text-blue-600 mb-6 flex items-center">
+                <span className="text-3xl mr-2">💡</span> The AI Solution
               </h3>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -117,7 +117,7 @@ const ValueProposition = () => {
             </div>
           </div>
           <div className="mt-8 text-center">
-            <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-300 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 backdrop-blur-sm">
+              <button className="rounded-[10rem] border-2 border-blue-600 cursor-pointer px-20 py-4 text-lg font-semibold text-blue-600 shadow-sm hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 transform active:scale-95 focus-visible:outline-blue-600">
               <span className="mr-2">💰</span>
               Stop Losing Leads—Schedule a Free AI Consultation
             </button>
@@ -138,7 +138,7 @@ const ValueProposition = () => {
           <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
             <div className="rounded-2xl bg-white p-10 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
               <h3 className="text-2xl font-semibold text-red-600 mb-6 flex items-center">
-                <span className="text-3xl mr-2">📌</span> The Problem
+                <span className="text-3xl mr-2">🚨</span> The Problem
               </h3>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 Double bookings and human errors cause chaos. And every minute a potential client spends waiting is a lost revenue opportunity.
@@ -146,8 +146,8 @@ const ValueProposition = () => {
             </div>
 
             <div className="rounded-2xl bg-white p-10 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-2xl font-semibold text-green-600 mb-6 flex items-center">
-                <span className="text-3xl mr-2">✅</span> The AI Solution
+              <h3 className="text-2xl font-semibold text-blue-600 mb-6 flex items-center">
+                <span className="text-3xl mr-2">💡</span> The AI Solution
               </h3>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -178,7 +178,7 @@ const ValueProposition = () => {
             </div>
           </div>
           <div className="mt-8 text-center">
-            <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-300 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 backdrop-blur-sm">
+              <button className="rounded-[10rem] border-2 border-blue-600 cursor-pointer px-20 py-4 text-lg font-semibold text-blue-600 shadow-sm hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 transform active:scale-95 focus-visible:outline-blue-600">
               <span className="mr-2">💰</span>
               Automate Your Bookings—Try AI for Free
             </button>
@@ -199,7 +199,7 @@ const ValueProposition = () => {
           <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
             <div className="rounded-2xl bg-white p-10 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
               <h3 className="text-2xl font-semibold text-red-600 mb-6 flex items-center">
-                <span className="text-3xl mr-2">📌</span> The Problem
+                <span className="text-3xl mr-2">🚨</span> The Problem
               </h3>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 People abandon calls, leave bad reviews, and switch to competitors offering faster service. Overworked agents get overwhelmed, leading to errors and bad interactions.
@@ -207,8 +207,8 @@ const ValueProposition = () => {
             </div>
 
             <div className="rounded-2xl bg-white p-10 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-2xl font-semibold text-green-600 mb-6 flex items-center">
-                <span className="text-3xl mr-2">✅</span> The AI Solution
+              <h3 className="text-2xl font-semibold text-blue-600 mb-6 flex items-center">
+                <span className="text-3xl mr-2">💡</span> The AI Solution
               </h3>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -239,7 +239,7 @@ const ValueProposition = () => {
             </div>
           </div>
           <div className="mt-8 text-center">
-            <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-300 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 backdrop-blur-sm">
+              <button className="rounded-[10rem] border-2 border-blue-600 cursor-pointer px-20 py-4 text-lg font-semibold text-blue-600 shadow-sm hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 transform active:scale-95 focus-visible:outline-blue-600">
               <span className="mr-2">💰</span>
               Eliminate Long Wait Times—See AI in Action
             </button>
@@ -260,7 +260,7 @@ const ValueProposition = () => {
           <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
             <div className="rounded-2xl bg-white p-10 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
               <h3 className="text-2xl font-semibold text-red-600 mb-6 flex items-center">
-                <span className="text-3xl mr-2">📌</span> The Problem
+                <span className="text-3xl mr-2">🚨</span> The Problem
               </h3>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 Customers expect local experiences—but instead, they get frustrated by language barriers.
@@ -268,8 +268,8 @@ const ValueProposition = () => {
             </div>
 
             <div className="rounded-2xl bg-white p-10 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-2xl font-semibold text-green-600 mb-6 flex items-center">
-                <span className="text-3xl mr-2">✅</span> The AI Solution
+              <h3 className="text-2xl font-semibold text-blue-600 mb-6 flex items-center">
+                <span className="text-3xl mr-2">💡</span> The AI Solution
               </h3>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -300,7 +300,7 @@ const ValueProposition = () => {
             </div>
           </div>
           <div className="mt-8 text-center">
-            <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-300 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 backdrop-blur-sm">
+              <button className="rounded-[10rem] border-2 border-blue-600 cursor-pointer px-20 py-4 text-lg font-semibold text-blue-600 shadow-sm hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 hover:scale-105 hover:shadow-xl hover:from-blue-700 hover:to-blue-800 transform active:scale-95 focus-visible:outline-blue-600">
               <span className="mr-2">💰</span>
               Reach More Customers with AI—Get a Free Demo
             </button>
