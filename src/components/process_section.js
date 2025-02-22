@@ -1,4 +1,6 @@
 
+import React from 'react';
+
 const ProcessSection = () => {
   const steps = [
     {
@@ -17,17 +19,17 @@ const ProcessSection = () => {
       title: "RAG System Development",
       description: "Our engineers develop custom Retrieval Augmented Generation systems, implement vector databases, and fine-tune Large Language Models for your specific use case.",
       icon: "🧠",
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format&fit=crop&q=60"
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60"
     },
     {
       title: "Enterprise Deployment",
       description: "We implement secure CI/CD pipelines, configure load balancers, and deploy your AI agent across multiple environments with automated failover.",
       icon: "🚀",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60"
+      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format&fit=crop&q=60"
     },
     {
       title: "Performance Optimization & Maintenance",
-      description: "Continuous monitoring of response latency, token usage, and accuracy metrics. Regular model retraining and knowledge base updates ensure peak performance.",
+      description: "Continuous monitoring, performance tuning, and proactive maintenance to ensure optimal AI agent performance and reliability.",
       icon: "📈",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=60"
     }
@@ -46,25 +48,30 @@ const ProcessSection = () => {
         </div>
 
         <div className="relative">
+          <div className="absolute top-0 bottom-0 left-[50%] w-px bg-blue-200"></div>
           {steps.map((step, index) => (
-            <div key={step.title} className="relative flex items-center mb-16">
-              <div className="flex-1 flex items-center">
-                <div className="w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center text-2xl text-white z-10">
-                  {step.icon}
+            <div key={step.title} className="relative mb-24 last:mb-0">
+              <div className={`flex items-center gap-8 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
+                <div className="flex-1 bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-white text-2xl">
+                      {step.icon}
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900">{step.title}</h3>
+                  </div>
+                  <p className="text-gray-600">{step.description}</p>
                 </div>
-                {index < steps.length - 1 && (
-                  <div className="h-1 bg-gradient-to-r from-blue-600 to-blue-400 flex-grow mx-4"></div>
-                )}
-              </div>
-              <div className="absolute top-20 left-0 w-full">
-                <div className="bg-white rounded-xl shadow-xl p-6 mx-2">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{step.title}</h3>
-                  <p className="text-gray-600 mb-4">{step.description}</p>
-                  <div className="rounded-lg overflow-hidden">
+                
+                <div className="w-16 h-16 rounded-full bg-blue-100 border-4 border-blue-600 flex items-center justify-center z-10">
+                  <span className="text-xl font-bold text-blue-600">{index + 1}</span>
+                </div>
+                
+                <div className="flex-1">
+                  <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
                     <img 
-                      src={step.image} 
+                      src={step.image}
                       alt={step.title}
-                      className="w-full h-48 object-cover transform hover:scale-105 transition-transform duration-300"
+                      className="w-full h-48 object-cover"
                     />
                   </div>
                 </div>
@@ -73,7 +80,7 @@ const ProcessSection = () => {
           ))}
         </div>
 
-        <div className="mt-32 text-center">
+        <div className="mt-20 text-center">
           <button className="rounded-[10rem] bg-gradient-to-r from-blue-600 to-blue-700 px-20 py-4 text-lg font-semibold text-white shadow-xl hover:from-blue-700 hover:to-blue-800 hover:scale-105 transform transition-all duration-300 active:scale-95">
             Start Your Enterprise AI Integration
           </button>
