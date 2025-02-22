@@ -25,7 +25,7 @@ const Header = () => {
       <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
+            <span className="sr-only">Universal Perk</span>
             <Image
               alt=""
               src="/logo.svg"
@@ -34,6 +34,14 @@ const Header = () => {
               className="h-10 w-auto text-[#4F46E5]"
             />
           </a>
+        </div>
+        <div className="lg:flex lg:flex-1 lg:justify-end"> {/* Always visible */}
+          <button
+            onClick={() => scrollToSection("contact")}
+            className="rounded-full bg-blue-600 px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 transition-all"
+          >
+            Let's Build Your AI Agent
+          </button>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -60,21 +68,13 @@ const Header = () => {
             </a>
           ))}
         </div>
-        <div className="lg:flex lg:flex-1 lg:justify-end"> {/* Always visible */}
-          <button
-            onClick={() => scrollToSection("contact")}
-            className="rounded-full bg-blue-600 px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 transition-all"
-          >
-            Let's Build Your AI Agent
-          </button>
-        </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-50" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">Universal Perk</span>
               <Image
                 alt=""
                 src="/logo.svg"
@@ -83,6 +83,17 @@ const Header = () => {
                 className="h-8 w-auto"
               />
             </a>
+            <div className="py-6">
+              <button
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  scrollToSection("contact");
+                }}
+                className="w-full rounded-full bg-blue-600 px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 transition-all"
+              >
+                Let's Build Your AI Agent
+              </button>
+            </div>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -108,17 +119,6 @@ const Header = () => {
                     {item.name}
                   </a>
                 ))}
-              </div>
-              <div className="py-6">
-                <button
-                  onClick={() => {
-                    setMobileMenuOpen(false);
-                    scrollToSection("contact");
-                  }}
-                  className="w-full rounded-full bg-blue-600 px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 transition-all"
-                >
-                  Let's Build Your AI Agent
-                </button>
               </div>
             </div>
           </div>
