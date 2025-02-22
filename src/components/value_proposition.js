@@ -57,7 +57,7 @@ const ValueProposition = () => {
           </div>
           <div className="mt-8 text-center">
             <button className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white transition-all duration-200 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-              <span className="mr-2">📌</span>
+              <span className="mr-2">✂️ </span>
               Cut Your Support Costs Today—Book a Free AI Demo
             </button>
           </div>
