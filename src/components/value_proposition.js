@@ -167,6 +167,116 @@ const ValueProposition = () => {
             </div>
           </div>
         </div>
+
+        {/* Fourth Value Proposition */}
+        <div>
+          <div className="mx-auto max-w-4xl text-center">
+            <h2 className="text-4xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800 sm:text-5xl mb-4">
+              Poor Customer Experience Due to Long Wait Times
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-gray-600 max-w-3xl mx-auto">
+              Customers hate waiting. Whether it's banking, healthcare, or travel, long hold times kill loyalty.
+            </p>
+          </div>
+
+          <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
+            <div className="rounded-2xl bg-white p-10 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-2xl font-semibold text-red-600 mb-6 flex items-center">
+                <span className="text-3xl mr-2">📌</span> The Problem
+              </h3>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+                People abandon calls, leave bad reviews, and switch to competitors offering faster service. Overworked agents get overwhelmed, leading to errors and bad interactions.
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-white p-10 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-2xl font-semibold text-green-600 mb-6 flex items-center">
+                <span className="text-3xl mr-2">✅</span> The AI Solution
+              </h3>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <span className="text-lg">🔹</span>
+                  <p className="text-gray-600">Zero-Wait AI Chatbots – Customers get instant answers to FAQs like account balances, appointment scheduling, and order tracking.</p>
+                </div>
+                <div className="flex items-start gap-4">
+                  <span className="text-lg">🔹</span>
+                  <p className="text-gray-600">AI Voice Agents Reduce Call Queues by 50%+ – AI handles Tier 1 support calls, answering common questions before escalating real issues to human agents.</p>
+                </div>
+                <div className="flex items-start gap-4">
+                  <span className="text-lg">🔹</span>
+                  <p className="text-gray-600">Personalized AI Conversations – AI remembers past interactions, making every response feel tailored to the customer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-12 rounded-2xl bg-gradient-to-r from-blue-600 to-blue-700 p-10 text-white shadow-xl">
+            <div className="flex items-center gap-4">
+              <span className="text-4xl">🚀</span>
+              <div>
+                <h3 className="text-2xl font-semibold mb-2">Real Impact</h3>
+                <p className="text-blue-50 text-lg">
+                  AI-powered voice agents cut call wait times from 15 minutes to under 2 minutes, drastically improving customer satisfaction.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Fifth Value Proposition */}
+        <div>
+          <div className="mx-auto max-w-4xl text-center">
+            <h2 className="text-4xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800 sm:text-5xl mb-4">
+              Lack of Multilingual & Inclusive Support
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-gray-600 max-w-3xl mx-auto">
+              You serve a global audience, but your support team speaks one language. Hiring multilingual agents is expensive and hard to scale.
+            </p>
+          </div>
+
+          <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
+            <div className="rounded-2xl bg-white p-10 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-2xl font-semibold text-red-600 mb-6 flex items-center">
+                <span className="text-3xl mr-2">📌</span> The Problem
+              </h3>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+                Customers expect local experiences—but instead, they get frustrated by language barriers.
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-white p-10 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-2xl font-semibold text-green-600 mb-6 flex items-center">
+                <span className="text-3xl mr-2">✅</span> The AI Solution
+              </h3>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <span className="text-lg">🔹</span>
+                  <p className="text-gray-600">50+ Languages, Instantly – AI voice agents and chatbots speak your customer's language with zero hiring costs.</p>
+                </div>
+                <div className="flex items-start gap-4">
+                  <span className="text-lg">🔹</span>
+                  <p className="text-gray-600">Auto-Translation for Seamless Conversations – AI detects a customer's language and responds accordingly.</p>
+                </div>
+                <div className="flex items-start gap-4">
+                  <span className="text-lg">🔹</span>
+                  <p className="text-gray-600">Localized AI for Cultural Relevance – AI adjusts time zones, currency formats, and phrasing to match customer expectations.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-12 rounded-2xl bg-gradient-to-r from-blue-600 to-blue-700 p-10 text-white shadow-xl">
+            <div className="flex items-center gap-4">
+              <span className="text-4xl">🚀</span>
+              <div>
+                <h3 className="text-2xl font-semibold mb-2">Real Impact</h3>
+                <p className="text-blue-50 text-lg">
+                  AI-driven multilingual support improves global customer retention by 40-50%, keeping customers loyal and engaged.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
