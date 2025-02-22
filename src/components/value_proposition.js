@@ -1,4 +1,3 @@
-
 const ValueProposition = () => {
   return (
     <div className="bg-gradient-to-b from-white to-gray-50 py-24">
@@ -30,15 +29,15 @@ const ValueProposition = () => {
               </h3>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <span className="text-lg">🔹</span>
+                  <span className="text-lg">💰</span>
                   <p className="text-gray-600">Cut Support Costs by 40%+ – AI handles 80% of routine queries instantly, reducing your need for large teams.</p>
                 </div>
                 <div className="flex items-start gap-4">
-                  <span className="text-lg">🔹</span>
+                  <span className="text-lg">🕒</span>
                   <p className="text-gray-600">24/7 Service Without Overtime Costs – AI chatbots & voice agents work around the clock—no breaks, no sick days.</p>
                 </div>
                 <div className="flex items-start gap-4">
-                  <span className="text-lg">🔹</span>
+                  <span className="text-lg">🤖</span>
                   <p className="text-gray-600">Omnichannel Support, No Extra Staffing – AI seamlessly responds on WhatsApp, Instagram, Messenger, and your website.</p>
                 </div>
               </div>
@@ -85,15 +84,15 @@ const ValueProposition = () => {
               </h3>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <span className="text-lg">🔹</span>
+                  <span className="text-lg">⚡</span>
                   <p className="text-gray-600">Instant Lead Engagement – AI chatbots qualify leads in real-time, collecting name, intent, and contact details.</p>
                 </div>
                 <div className="flex items-start gap-4">
-                  <span className="text-lg">🔹</span>
+                  <span className="text-lg">🤖</span>
                   <p className="text-gray-600">AI Voice Agents Make the First Call for You – AI follows up immediately, verifying interest and scheduling sales calls.</p>
                 </div>
                 <div className="flex items-start gap-4">
-                  <span className="text-lg">🔹</span>
+                  <span className="text-lg">🤖</span>
                   <p className="text-gray-600">Seamless CRM Integration – AI auto-syncs with HubSpot, Salesforce, or Zoho, ensuring every lead gets the right follow-up.</p>
                 </div>
               </div>
@@ -140,15 +139,15 @@ const ValueProposition = () => {
               </h3>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <span className="text-lg">🔹</span>
+                  <span className="text-lg">📅</span>
                   <p className="text-gray-600">AI-Powered Appointment Scheduling – AI chatbots sync with Google Calendar, Outlook, and internal booking systems to book, reschedule, and confirm appointments instantly.</p>
                 </div>
                 <div className="flex items-start gap-4">
-                  <span className="text-lg">🔹</span>
+                  <span className="text-lg">🤖</span>
                   <p className="text-gray-600">AI Voice Agents Handle Phone Bookings – AI takes calls and schedules real estate showings, medical visits, and salon appointments without human intervention.</p>
                 </div>
                 <div className="flex items-start gap-4">
-                  <span className="text-lg">🔹</span>
+                  <span className="text-lg">🤖</span>
                   <p className="text-gray-600">Automated Reminders to Reduce No-Shows – AI follows up via SMS, chat, and email to ensure customers show up.</p>
                 </div>
               </div>
@@ -195,15 +194,15 @@ const ValueProposition = () => {
               </h3>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <span className="text-lg">🔹</span>
+                  <span className="text-lg">💬</span>
                   <p className="text-gray-600">Zero-Wait AI Chatbots – Customers get instant answers to FAQs like account balances, appointment scheduling, and order tracking.</p>
                 </div>
                 <div className="flex items-start gap-4">
-                  <span className="text-lg">🔹</span>
+                  <span className="text-lg">🤖</span>
                   <p className="text-gray-600">AI Voice Agents Reduce Call Queues by 50%+ – AI handles Tier 1 support calls, answering common questions before escalating real issues to human agents.</p>
                 </div>
                 <div className="flex items-start gap-4">
-                  <span className="text-lg">🔹</span>
+                  <span className="text-lg">🤖</span>
                   <p className="text-gray-600">Personalized AI Conversations – AI remembers past interactions, making every response feel tailored to the customer.</p>
                 </div>
               </div>
@@ -250,15 +249,15 @@ const ValueProposition = () => {
               </h3>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <span className="text-lg">🔹</span>
+                  <span className="text-lg">🌍</span>
                   <p className="text-gray-600">50+ Languages, Instantly – AI voice agents and chatbots speak your customer's language with zero hiring costs.</p>
                 </div>
                 <div className="flex items-start gap-4">
-                  <span className="text-lg">🔹</span>
+                  <span className="text-lg">🤖</span>
                   <p className="text-gray-600">Auto-Translation for Seamless Conversations – AI detects a customer's language and responds accordingly.</p>
                 </div>
                 <div className="flex items-start gap-4">
-                  <span className="text-lg">🔹</span>
+                  <span className="text-lg">🤖</span>
                   <p className="text-gray-600">Localized AI for Cultural Relevance – AI adjusts time zones, currency formats, and phrasing to match customer expectations.</p>
                 </div>
               </div>
