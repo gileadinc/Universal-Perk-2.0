@@ -1,10 +1,11 @@
 
-import { useState } from 'react';
-import { Dialog } from '@headlessui/react';
-import { X } from 'lucide-react';
+import { Dialog } from "@headlessui/react";
+import { X } from "lucide-react";
+import { useState } from "react";
 
 const InquiryModal = ({ isOpen, onClose }) => {
   const [step, setStep] = useState(1);
+  const [errors, setErrors] = useState({});
   const [formData, setFormData] = useState({
     projectType: '',
     description: '',
@@ -17,119 +18,163 @@ const InquiryModal = ({ isOpen, onClose }) => {
 
   const handleInputChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+    // Clear error when user types
+    if (errors[e.target.name]) {
+      setErrors({ ...errors, [e.target.name]: '' });
+    }
   };
 
-  const nextStep = () => setStep(step + 1);
+  const validateStep = (currentStep) => {
+    const newErrors = {};
+    
+    if (currentStep === 1) {
+      if (!formData.projectType) newErrors.projectType = 'Please select a project type';
+      if (!formData.description) newErrors.description = 'Please provide a project description';
+    } else if (currentStep === 2) {
+      if (!formData.budget) newErrors.budget = 'Please select a budget range';
+      if (!formData.timeline) newErrors.timeline = 'Please select a timeline';
+    } else if (currentStep === 3) {
+      if (!formData.name) newErrors.name = 'Name is required';
+      if (!formData.email) {
+        newErrors.email = 'Email is required';
+      } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+        newErrors.email = 'Please enter a valid email';
+      }
+      if (!formData.company) newErrors.company = 'Company name is required';
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const nextStep = () => {
+    if (validateStep(step)) {
+      setStep(step + 1);
+    }
+  };
+
   const prevStep = () => setStep(step - 1);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log(formData);
-    onClose();
+    if (validateStep(3)) {
+      console.log(formData);
+      onClose();
+    }
   };
 
   return (
     <Dialog open={isOpen} onClose={onClose} className="relative z-50">
-      <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
+      <div className="fixed inset-0 bg-black/30 backdrop-blur-sm" aria-hidden="true" />
       <div className="fixed inset-0 flex items-center justify-center p-4">
         <Dialog.Panel className="w-full max-w-2xl bg-white rounded-xl shadow-2xl">
           <div className="flex justify-between items-center p-6 border-b">
-            <Dialog.Title className="text-xl font-semibold">Get Started with AI Integration</Dialog.Title>
+            <Dialog.Title className="text-2xl font-semibold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+              Let's Build Your AI Solution
+            </Dialog.Title>
             <button onClick={onClose} className="text-gray-500 hover:text-gray-700">
               <X className="h-6 w-6" />
             </button>
           </div>
 
           <div className="p-6">
-            {/* Progress Bar */}
+            {/* Progress Indicator */}
             <div className="mb-8">
               <div className="flex justify-between mb-2">
-                {[1, 2, 3].map((num) => (
-                  <div key={num} className={`flex items-center ${num < step ? 'text-blue-600' : 'text-gray-400'}`}>
-                    <div className={`w-8 h-8 rounded-full flex items-center justify-center border-2 ${num <= step ? 'border-blue-600 text-blue-600' : 'border-gray-300'}`}>
-                      {num}
+                {['Project Details', 'Timeline & Budget', 'Contact Info'].map((label, index) => (
+                  <div 
+                    key={label} 
+                    className={`flex items-center ${index < step ? 'text-blue-600' : 'text-gray-400'}`}
+                  >
+                    <div className={`w-8 h-8 rounded-full flex items-center justify-center border-2 
+                      ${index + 1 === step ? 'border-blue-600 bg-blue-50' : 
+                        index + 1 < step ? 'border-blue-600 bg-blue-600 text-white' : 
+                        'border-gray-300'}`}
+                    >
+                      {index + 1 < step ? '✓' : index + 1}
                     </div>
-                    {num < 3 && <div className={`w-24 h-1 mx-2 ${num < step ? 'bg-blue-600' : 'bg-gray-300'}`} />}
+                    <span className="ml-2 text-sm font-medium">{label}</span>
                   </div>
                 ))}
               </div>
+              <div className="h-2 bg-gray-200 rounded-full">
+                <div 
+                  className="h-full bg-blue-600 rounded-full transition-all duration-300"
+                  style={{ width: `${((step - 1) / 2) * 100}%` }}
+                />
+              </div>
             </div>
 
-            <form onSubmit={handleSubmit}>
-              {/* Step 1: Project Type */}
+            <form onSubmit={handleSubmit} className="space-y-6">
               {step === 1 && (
-                <div className="space-y-4">
-                  <h3 className="text-lg font-medium mb-4">What type of AI solution are you looking for?</h3>
-                  <div className="space-y-3">
-                    <label className="block">
-                      <input
-                        type="radio"
-                        name="projectType"
-                        value="voice"
-                        onChange={handleInputChange}
-                        className="mr-2"
-                      />
-                      Voice AI Assistant
-                    </label>
-                    <label className="block">
-                      <input
-                        type="radio"
-                        name="projectType"
-                        value="chat"
-                        onChange={handleInputChange}
-                        className="mr-2"
-                      />
-                      Chat AI Assistant
-                    </label>
-                    <label className="block">
-                      <input
-                        type="radio"
-                        name="projectType"
-                        value="both"
-                        onChange={handleInputChange}
-                        className="mr-2"
-                      />
-                      Both Voice & Chat AI
-                    </label>
-                  </div>
+                <div className="space-y-6">
                   <div>
-                    <label className="block mb-2">Project Description</label>
+                    <label className="block mb-2 font-medium">Project Type</label>
+                    <div className="grid grid-cols-2 gap-4">
+                      {['chat', 'voice', 'both'].map((type) => (
+                        <button
+                          type="button"
+                          key={type}
+                          onClick={() => handleInputChange({ target: { name: 'projectType', value: type } })}
+                          className={`p-4 border-2 rounded-lg text-left ${
+                            formData.projectType === type 
+                              ? 'border-blue-600 bg-blue-50' 
+                              : 'border-gray-200 hover:border-blue-300'
+                          }`}
+                        >
+                          <h3 className="font-medium capitalize">{type} AI</h3>
+                          <p className="text-sm text-gray-500 mt-1">
+                            {type === 'chat' ? 'Intelligent chat solutions' :
+                             type === 'voice' ? 'Voice-enabled AI agents' :
+                             'Combined chat & voice AI'}
+                          </p>
+                        </button>
+                      ))}
+                    </div>
+                    {errors.projectType && <p className="mt-2 text-sm text-red-600">{errors.projectType}</p>}
+                  </div>
+
+                  <div>
+                    <label className="block mb-2 font-medium">Project Description</label>
                     <textarea
                       name="description"
                       rows="4"
-                      className="w-full border rounded-lg p-2"
+                      className={`w-full border rounded-lg p-3 ${errors.description ? 'border-red-300' : 'border-gray-200'}`}
                       placeholder="Tell us about your project requirements..."
                       onChange={handleInputChange}
+                      value={formData.description}
                     />
+                    {errors.description && <p className="mt-2 text-sm text-red-600">{errors.description}</p>}
                   </div>
                 </div>
               )}
 
-              {/* Step 2: Budget & Timeline */}
               {step === 2 && (
-                <div className="space-y-4">
-                  <h3 className="text-lg font-medium mb-4">Budget & Timeline</h3>
+                <div className="space-y-6">
                   <div>
-                    <label className="block mb-2">Budget Range</label>
+                    <label className="block mb-2 font-medium">Budget Range</label>
                     <select
                       name="budget"
-                      className="w-full border rounded-lg p-2"
+                      value={formData.budget}
                       onChange={handleInputChange}
+                      className={`w-full border rounded-lg p-3 ${errors.budget ? 'border-red-300' : 'border-gray-200'}`}
                     >
                       <option value="">Select budget range</option>
+                      <option value="5k-10k">$5,000 - $10,000</option>
                       <option value="10k-25k">$10,000 - $25,000</option>
                       <option value="25k-50k">$25,000 - $50,000</option>
-                      <option value="50k-100k">$50,000 - $100,000</option>
-                      <option value="100k+">$100,000+</option>
+                      <option value="50k+">$50,000+</option>
                     </select>
+                    {errors.budget && <p className="mt-2 text-sm text-red-600">{errors.budget}</p>}
                   </div>
+
                   <div>
-                    <label className="block mb-2">Expected Timeline</label>
+                    <label className="block mb-2 font-medium">Timeline (months)</label>
                     <select
                       name="timeline"
-                      className="w-full border rounded-lg p-2"
+                      value={formData.timeline}
                       onChange={handleInputChange}
+                      className={`w-full border rounded-lg p-3 ${errors.timeline ? 'border-red-300' : 'border-gray-200'}`}
                     >
                       <option value="">Select timeline</option>
                       <option value="1-3">1-3 months</option>
@@ -137,43 +182,50 @@ const InquiryModal = ({ isOpen, onClose }) => {
                       <option value="6-12">6-12 months</option>
                       <option value="12+">12+ months</option>
                     </select>
+                    {errors.timeline && <p className="mt-2 text-sm text-red-600">{errors.timeline}</p>}
                   </div>
                 </div>
               )}
 
-              {/* Step 3: Contact Information */}
               {step === 3 && (
-                <div className="space-y-4">
-                  <h3 className="text-lg font-medium mb-4">Contact Information</h3>
+                <div className="space-y-6">
                   <div>
-                    <label className="block mb-2">Full Name</label>
+                    <label className="block mb-2 font-medium">Full Name</label>
                     <input
                       type="text"
                       name="name"
-                      className="w-full border rounded-lg p-2"
-                      placeholder="Enter your full name"
+                      value={formData.name}
                       onChange={handleInputChange}
+                      className={`w-full border rounded-lg p-3 ${errors.name ? 'border-red-300' : 'border-gray-200'}`}
+                      placeholder="Enter your full name"
                     />
+                    {errors.name && <p className="mt-2 text-sm text-red-600">{errors.name}</p>}
                   </div>
+
                   <div>
-                    <label className="block mb-2">Email</label>
+                    <label className="block mb-2 font-medium">Email</label>
                     <input
                       type="email"
                       name="email"
-                      className="w-full border rounded-lg p-2"
-                      placeholder="Enter your email"
+                      value={formData.email}
                       onChange={handleInputChange}
+                      className={`w-full border rounded-lg p-3 ${errors.email ? 'border-red-300' : 'border-gray-200'}`}
+                      placeholder="Enter your email"
                     />
+                    {errors.email && <p className="mt-2 text-sm text-red-600">{errors.email}</p>}
                   </div>
+
                   <div>
-                    <label className="block mb-2">Company</label>
+                    <label className="block mb-2 font-medium">Company</label>
                     <input
                       type="text"
                       name="company"
-                      className="w-full border rounded-lg p-2"
-                      placeholder="Enter your company name"
+                      value={formData.company}
                       onChange={handleInputChange}
+                      className={`w-full border rounded-lg p-3 ${errors.company ? 'border-red-300' : 'border-gray-200'}`}
+                      placeholder="Enter your company name"
                     />
+                    {errors.company && <p className="mt-2 text-sm text-red-600">{errors.company}</p>}
                   </div>
                 </div>
               )}
@@ -183,7 +235,7 @@ const InquiryModal = ({ isOpen, onClose }) => {
                   <button
                     type="button"
                     onClick={prevStep}
-                    className="px-4 py-2 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50"
+                    className="px-6 py-2 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 transition-colors"
                   >
                     Back
                   </button>
@@ -192,16 +244,16 @@ const InquiryModal = ({ isOpen, onClose }) => {
                   <button
                     type="button"
                     onClick={nextStep}
-                    className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 ml-auto"
+                    className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors ml-auto"
                   >
-                    Next
+                    Next Step
                   </button>
                 ) : (
                   <button
                     type="submit"
-                    className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 ml-auto"
+                    className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors ml-auto"
                   >
-                    Submit
+                    Submit Inquiry
                   </button>
                 )}
               </div>
