@@ -18,12 +18,10 @@ const Hero = () => {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-4xl text-center">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                Transforming your needs with Innovative{" "}
-                <span className="text-blue-600">Software</span>
+                We Build AI Voice & Chat Agents That Boost Sales & Cut Costs—Guaranteed
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                Incorporate industries such as government sector, startups,
-                corporations, travel industry, and telecommunications industry
+                Automate customer service, close more deals, and slash response times—without hiring more people
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
