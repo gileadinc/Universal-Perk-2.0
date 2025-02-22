@@ -7,31 +7,31 @@ const ProcessSection = () => {
       title: "Discovery & Architecture Planning",
       description: "Our technical team conducts in-depth analysis of your existing infrastructure, data sources, and integration requirements to architect an optimal AI solution.",
       icon: "🔍",
-      image: "/report.png"
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&auto=format&fit=crop&q=60"
     },
     {
       title: "Technical Configuration & KPI Definition",
       description: "We establish integration endpoints, define API specifications, configure cloud infrastructure, and implement monitoring systems for performance tracking.",
       icon: "⚙️",
-      image: "/PM.png"
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=60"
     },
     {
       title: "RAG System Development",
       description: "Our engineers develop custom Retrieval Augmented Generation systems, implement vector databases, and fine-tune Large Language Models for your specific use case.",
       icon: "🧠",
-      image: "/lambda.png"
+      image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&auto=format&fit=crop&q=60"
     },
     {
       title: "Enterprise Deployment",
       description: "We implement secure CI/CD pipelines, configure load balancers, and deploy your AI agent across multiple environments with automated failover.",
       icon: "🚀",
-      image: "/aws.svg"
+      image: "https://images.unsplash.com/photo-1667372459534-848ec00d4da6?w=800&auto=format&fit=crop&q=60"
     },
     {
       title: "Performance Optimization & Maintenance",
       description: "Continuous monitoring of response latency, token usage, and accuracy metrics. Regular model retraining and knowledge base updates ensure peak performance.",
       icon: "📈",
-      image: "/PM2.png"
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=60"
     }
   ];
 
