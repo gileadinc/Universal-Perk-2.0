@@ -35,15 +35,25 @@ const Header = () => {
             />
           </a>
         </div>
-        <div className="lg:flex lg:flex-1 lg:justify-end"> {/* Always visible */}
+        <div className="hidden lg:flex lg:gap-x-12">
+          {navigation.map((item) => (
+            <a
+              key={item.name}
+              href={`#${item.href}`}
+              className="text-sm font-semibold leading-6 text-gray-900"
+            >
+              {item.name}
+            </a>
+          ))}
+        </div>
+        <div className="flex items-center gap-4">
           <button
             onClick={() => scrollToSection("contact")}
-            className="rounded-full bg-blue-600 px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 transition-all"
+            className="rounded-full bg-blue-600 px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 transition-all hidden lg:block"
           >
             Let's Build Your AI Agent
           </button>
-        </div>
-        <div className="flex lg:hidden">
+          <div className="flex lg:hidden">
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
