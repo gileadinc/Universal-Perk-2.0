@@ -4,11 +4,11 @@ const ValueProposition = () => {
       <div className="mx-auto max-w-7xl px-6 lg:px-8 space-y-24">
         {/* First Value Proposition */}
         <div>
-          <div className="relative mb-8">
-            <img src={`https://picsum.photos/800/400?random=${Math.random()}`} alt="Customer Support" className="w-full h-64 object-cover rounded-2xl shadow-lg" />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white/90"></div>
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-90"></div>
+            <img src="/client.png" alt="Customer Support" className="w-full h-48 object-cover rounded-t-2xl" />
           </div>
-          <div className="mx-auto max-w-4xl text-center">
+          <div className="mx-auto max-w-4xl text-center relative -mt-16">
             <h2 className="text-4xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800 sm:text-5xl mb-4">
               High Customer Support Costs & Scalability Issues
             </h2>
@@ -69,11 +69,11 @@ const ValueProposition = () => {
 
         {/* Second Value Proposition */}
         <div>
-          <div className="relative mb-8">
-            <img src="/form-designer.png" alt="Sales Funnel" className="w-full h-64 object-cover rounded-2xl shadow-lg" />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white/90"></div>
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-90"></div>
+            <img src="/sales.png" alt="Sales Funnel" className="w-full h-48 object-cover rounded-t-2xl" />
           </div>
-          <div className="mx-auto max-w-4xl text-center">
+          <div className="mx-auto max-w-4xl text-center relative -mt-16">
             <h2 className="text-4xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800 sm:text-5xl mb-4">
               Slow Lead Qualification & Sales Funnel Drop-Offs
             </h2>
@@ -134,11 +134,11 @@ const ValueProposition = () => {
 
         {/* Third Value Proposition */}
         <div>
-          <div className="relative mb-8">
-            <img src="/report.png" alt="Scheduling" className="w-full h-64 object-cover rounded-2xl shadow-lg" />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white/90"></div>
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-90"></div>
+            <img src="/calendar.png" alt="Appointment Scheduling" className="w-full h-48 object-cover rounded-t-2xl" />
           </div>
-          <div className="mx-auto max-w-4xl text-center">
+          <div className="mx-auto max-w-4xl text-center relative -mt-16">
             <h2 className="text-4xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800 sm:text-5xl mb-4">
               Inefficiencies in Appointment Scheduling & Service Bookings
             </h2>
@@ -199,11 +199,11 @@ const ValueProposition = () => {
 
         {/* Fourth Value Proposition */}
         <div>
-          <div className="relative mb-8">
-            <img src="/phone.png" alt="Customer Wait Times" className="w-full h-64 object-cover rounded-2xl shadow-lg" />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white/90"></div>
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-90"></div>
+            <img src="/clock.png" alt="Wait Times" className="w-full h-48 object-cover rounded-t-2xl" />
           </div>
-          <div className="mx-auto max-w-4xl text-center">
+          <div className="mx-auto max-w-4xl text-center relative -mt-16">
             <h2 className="text-4xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800 sm:text-5xl mb-4">
               Poor Customer Experience Due to Long Wait Times
             </h2>
@@ -264,11 +264,11 @@ const ValueProposition = () => {
 
         {/* Fifth Value Proposition */}
         <div>
-          <div className="relative mb-8">
-            <img src="/lambda.png" alt="Multilingual Support" className="w-full h-64 object-cover rounded-2xl shadow-lg" />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white/90"></div>
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-90"></div>
+            <img src="/globe.png" alt="Multilingual Support" className="w-full h-48 object-cover rounded-t-2xl" />
           </div>
-          <div className="mx-auto max-w-4xl text-center">
+          <div className="mx-auto max-w-4xl text-center relative -mt-16">
             <h2 className="text-4xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800 sm:text-5xl mb-4">
               Lack of Multilingual & Inclusive Support
             </h2>
