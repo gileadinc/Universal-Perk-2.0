@@ -7,7 +7,6 @@ import { useRouter } from "next/navigation";
 const navigation = [
   { name: "Features", href: "features" },
   { name: "Process", href: "process" },
-  { name: "Schedule", href: "schedule" },
   { name: "Contact", href: "contact" }
 ];
 
@@ -35,15 +34,24 @@ const Header = () => {
             />
           </a>
         </div>
+        <div className="hidden lg:flex lg:gap-x-12">
+          {navigation.map((item) => (
+            <a
+              key={item.name}
+              href={`#${item.href}`}
+              className="text-sm font-semibold leading-6 text-gray-900"
+            >
+              {item.name}
+            </a>
+          ))}
+        </div>
         <div className="flex items-center gap-4">
           <button
             onClick={() => scrollToSection("contact")}
-            className="rounded-full bg-blue-600 px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 transition-all hidden lg:block"
+            className="rounded-full bg-blue-600 px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 transition-all"
           >
             Let's Build Your AI Agent
           </button>
-        </div>
-        <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
             <a
               key={item.name}
