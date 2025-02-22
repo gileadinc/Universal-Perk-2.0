@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Menu, X } from "lucide-react";
@@ -61,12 +60,12 @@ const Header = () => {
             </a>
           ))}
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+        <div className="lg:flex lg:flex-1 lg:justify-end"> {/* Always visible */}
           <button
             onClick={() => scrollToSection("contact")}
             className="rounded-full bg-blue-600 px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 transition-all"
           >
-            Talk to an AI Expert
+            Let's Build Your AI Agent
           </button>
         </div>
       </nav>
@@ -118,7 +117,7 @@ const Header = () => {
                   }}
                   className="w-full rounded-full bg-blue-600 px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 transition-all"
                 >
-                  Talk to an AI Expert
+                  Let's Build Your AI Agent
                 </button>
               </div>
             </div>
