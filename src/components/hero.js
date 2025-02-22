@@ -32,6 +32,12 @@ const Hero = () => {
                 >
                   Get a Quote
                 </a>
+                <a
+                  onClick={() => scrollToSection("contact")}
+                  className="rounded-[10rem] border-2 border-blue-600 cursor-pointer px-20 py-2.5 text-sm font-semibold text-blue-600 shadow-sm hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                >
+                  Talk to Us
+                </a>
               </div>
             </div>
           </div>
