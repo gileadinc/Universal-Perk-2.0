@@ -92,7 +92,7 @@ const InquiryModal = ({ isOpen, onClose }) => {
         <Dialog.Panel className="w-full max-w-2xl bg-white rounded-xl shadow-2xl">
           <div className="flex justify-between items-center p-6 border-b">
             <Dialog.Title className="text-2xl font-semibold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-              Let's Build Your AI Solution
+              Let&#39;s Build Your AI Solution
             </Dialog.Title>
             <button onClick={onClose} className="text-gray-500 hover:text-gray-700">
               <X className="h-6 w-6" />
@@ -103,7 +103,7 @@ const InquiryModal = ({ isOpen, onClose }) => {
             {/* Progress Indicator */}
             <div className="mb-8">
               <div className="flex justify-between mb-2">
-                {['Project Details', 'Timeline & Budget', 'Contact Info'].map((label, index) => (
+                {['Project Details', 'Timeline &amp; Budget', 'Contact Info'].map((label, index) => (
                   <div 
                     key={label} 
                     className={`flex items-center ${index < step ? 'text-blue-600' : 'text-gray-400'}`}
@@ -148,7 +148,7 @@ const InquiryModal = ({ isOpen, onClose }) => {
                           <p className="text-sm text-gray-500 mt-1">
                             {type === 'chat' ? 'Intelligent chat solutions' :
                              type === 'voice' ? 'Voice-enabled AI agents' :
-                             'Combined chat & voice AI'}
+                             'Combined chat &amp; voice AI'}
                           </p>
                         </button>
                       ))}
@@ -275,7 +275,7 @@ const InquiryModal = ({ isOpen, onClose }) => {
                     Back
                   </button>
                 )}
-                {step < 3 ? (
+                {step &lt; 3 ? (
                   <button
                     type="button"
                     onClick={nextStep}

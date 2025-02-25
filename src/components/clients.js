@@ -50,7 +50,9 @@ const Clients = () => {
           <div className="flex items-center justify-end space-x-40 animate-loop-scroll">
             {images.map((image, index) => (
               <div key={index}>
-                <img
+                import Image from "next/image";
+
+<Image width={250} height={75}
                   loading="lazy"
                   src={image.path}
                   style={{maxWidth: '250px'}}

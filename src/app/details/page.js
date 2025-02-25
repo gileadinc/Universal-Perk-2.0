@@ -4,6 +4,7 @@ import KeyBenefits from "@/components/keyframes";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { ArrowLeft, Menu, X } from "lucide-react";
 import React, { useEffect, useState } from "react";
+import Image from "next/image"; // Import Image component
 
 const Details = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -76,11 +77,12 @@ const Details = () => {
                 <div className="flex lg:flex-1">
                   <a href="#" className="-m-1.5 p-1.5">
                     <span className="sr-only">Universal Perk</span>
-                    <img
-                      alt="Universal Perk Logo"
+                    <Image
                       src="/logo.svg"
+                      alt="Universal Perk Logo"
+                      width={50} // Add width and height
+                      height={50}
                       className="h-12 w-auto"
-                      
                     />
                   </a>
                 </div>
@@ -116,9 +118,11 @@ const Details = () => {
                   <div className="flex items-center justify-between">
                     <a href="#" className="-m-1.5 p-1.5">
                       <span className="sr-only">Universal Perk</span>
-                      <img
-                        alt="Universal Perk Logo"
+                      <Image
                         src="/logo.svg"
+                        alt="Universal Perk Logo"
+                        width={40} // Add width and height
+                        height={40}
                         className="h-10 w-10"
                       />
                     </a>

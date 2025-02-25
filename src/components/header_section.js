@@ -25,7 +25,7 @@ const Header = () => {
           onClick={() => scrollToSection("contact")}
           className="rounded-full bg-blue-600 px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 transition-all"
         >
-          Let's Build Your AI Agent
+          Let&apos;s Build Your AI Agent
         </button>
       </nav>
     </header>

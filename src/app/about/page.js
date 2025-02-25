@@ -5,6 +5,7 @@ import Header from "@/components/header";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Building, Mail, Menu, Phone, X } from "lucide-react";
 import { useState } from "react";
+import Image from "next/image";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -75,11 +76,7 @@ export default function About() {
               <div className="flex lg:flex-1">
                 <a href="#" className="-m-1.5 p-1.5">
                   <span className="sr-only">Universal Perk</span>
-                  <img
-                    alt=""
-                    src="/logo.svg"
-                    className="h-20 w-auto"
-                  />
+                  <Image src="/logo.svg" alt="Universal Perk Logo" width={50} height={50} className="h-20 w-auto" />
                 </a>
               </div>
               <div className="flex lg:hidden">
@@ -114,11 +111,7 @@ export default function About() {
                 <div className="flex items-center justify-between">
                   <a href="#" className="-m-1.5 p-1.5">
                     <span className="sr-only">Universal Perk</span>
-                    <img
-                      alt=""
-                      src="/logo.svg"
-                      className="h-8 w-auto"
-                    />
+                    <Image src="/logo.svg" alt="Universal Perk Logo" width={50} height={50} className="h-8 w-auto" />
                   </a>
                   <button
                     type="button"
