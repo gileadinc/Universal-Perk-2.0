@@ -19,8 +19,8 @@ const LandingPage = () => {
       <Header />
       <main className="isolate">
         <Hero />
-        <ValueProposition />
         <Clients />
+        <ValueProposition />
         <ProcessSection />
         <Features />
         <Projects />

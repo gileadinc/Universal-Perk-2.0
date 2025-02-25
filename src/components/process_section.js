@@ -9,14 +9,14 @@ const ProcessSection = () => {
       image: "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?w=800&auto=format&fit=crop&q=60"
     },
     {
-      title: "Technical Configuration & KPI Definition",
+      title: "Define your KPIs & Success Metrics",
       description: "We establish integration endpoints, define API specifications, configure cloud infrastructure, and implement monitoring systems for performance tracking.",
       icon: "⚙️",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=60"
     },
     {
-      title: "RAG System Development",
-      description: "Our engineers develop custom Retrieval Augmented Generation systems, implement vector databases, and fine-tune Large Language Models for your specific use case.",
+      title: "AI Agent Development",
+      description: "This is the backbone of the AI Agent. Our engineers develop custom Retrieval Augmented Generation systems, implement vector databases, and fine-tune Large Language Models for your specific use case.",
       icon: "🧠",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60"
     },
@@ -24,7 +24,8 @@ const ProcessSection = () => {
       title: "Enterprise Deployment",
       description: "We implement secure CI/CD pipelines, configure load balancers, and deploy your AI agent across multiple environments with automated failover.",
       icon: "🚀",
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format&fit=crop&q=60"
+      image: '/rocket.jpg'
+      // image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format&fit=crop&q=60"
     },
     {
       title: "Performance Optimization & Maintenance",

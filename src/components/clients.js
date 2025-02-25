@@ -4,24 +4,24 @@ import Autoplay from "embla-carousel-autoplay";
 
 const images = [
   {
-    path: "/bayer-logo.jpeg",
-    alt: "Bayer",
-  },
-  {
-    path: "/cognizant-logo.png",
-    alt: "Cognizant",
-  },
-  {
-    path: "/deliotte-logo.png",
-    alt: "Deliotte",
+    path: "/tiktok-logo.webp",
+    alt: "Tiktok",
   },
   {
     path: "/paypal-logo.png",
     alt: "Paypal",
   },
   {
-    path: "/tiktok-logo.webp",
-    alt: "Tiktok",
+    path: "/deliotte-logo.png",
+    alt: "Deliotte",
+  },
+  {
+    path: "/bayer-logo.jpeg",
+    alt: "Bayer",
+  },
+  {
+    path: "/cognizant-logo.png",
+    alt: "Cognizant",
   },
   {
     path: "/PM.png",
@@ -54,7 +54,7 @@ const Clients = () => {
                   loading="lazy"
                   src={image.path}
                   style={{maxWidth: '250px'}}
-                  className="w-auto h-[65px] max-w-auto"
+                  className="w-auto h-[75px] max-w-auto"
                   alt={image.alt}
                 />
               </div>
