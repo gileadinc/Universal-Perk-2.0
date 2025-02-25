@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from "next/image";
 
 const ProcessSection = () => {
   const steps = [
@@ -68,7 +69,7 @@ const ProcessSection = () => {
 
                 <div className="flex-1">
                   <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-                    <img 
+                    <Image 
                       src={step.image}
                       alt={step.title}
                       className="w-full h-48 object-cover"

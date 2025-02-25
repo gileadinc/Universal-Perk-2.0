@@ -1,6 +1,7 @@
 import React from "react";
 import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import Image from "next/image";
 
 const images = [
   {
@@ -50,9 +51,7 @@ const Clients = () => {
           <div className="flex items-center justify-end space-x-40 animate-loop-scroll">
             {images.map((image, index) => (
               <div key={index}>
-                import Image from "next/image";
-
-<Image width={250} height={75}
+                <Image width={250} height={75}
                   loading="lazy"
                   src={image.path}
                   style={{maxWidth: '250px'}}

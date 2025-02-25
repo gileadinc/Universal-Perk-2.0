@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Wallet, ChevronDown } from "lucide-react";
+import Image from "next/image";
 
 const features = [
   {
@@ -66,7 +67,8 @@ export default function Features() {
             <div>
               <div className="flex flex-col items-start">
                 <div className="h-20 w-20">
-                  <img
+                  <Image
+                    alt="Feature Logo"
                     src={feature.logo}
                     className="text-blue-600 object-fit"
                   />

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Schedule = () => {
   const technologies = [
     { src: "/react.svg", alt: "React" },
@@ -24,7 +26,7 @@ const Schedule = () => {
         <div className="flex flex-wrap justify-center gap-6">
           {technologies.map((tech, index) => (
             <div key={index} className="flex justify-center items-center">
-              <img
+              <Image
                 src={tech.src}
                 alt={tech.alt}
                 className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 object-contain"
