@@ -29,6 +29,8 @@ const Schedule = () => {
               <Image
                 src={tech.src}
                 alt={tech.alt}
+                width={96}
+                height={96}
                 className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 object-contain"
               />
             </div>
