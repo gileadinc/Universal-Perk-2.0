@@ -69,11 +69,11 @@ const ProcessSection = () => {
 
                 <div className="flex-1">
                   <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-                    <Image 
+                    <Image
                       src={step.image}
                       alt={step.title}
-                      width={step.image.includes('unsplash') ? 800 : undefined}
-                      height={step.image.includes('unsplash') ? 600 : undefined}
+                      width={800}
+                      height={600}
                       className="w-full h-48 object-cover"
                     />
                   </div>
