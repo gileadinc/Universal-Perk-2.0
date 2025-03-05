@@ -9,7 +9,7 @@ const features = [
     description: "What has been worked on",
     logo: "/paypal-logo.png",
     extraContent:
-      "We led a successful migration of REST API services to GraphQL, resulting in a 300% improvement in site performance. This transition enabled more efficient data fetching and reduced server load. In parallel, we undertook a comprehensive migration of legacy code, ensuring modern architecture compatibility, enhanced maintainability, and streamlined future development processes. This work has significantly improved the scalability and responsiveness of the platform.",
+      "We led a successful migration of REST API services to GraphQL, resulting in a 300% improvement in site performance. This transition enabled more efficient data fetching and reduced server load. In parallel, we undertook a comprehensive migration of legacy code, ensuring modern architecture compatibility, enhanced maintainability, and streamlined future development processes. This work has significantly improved the scalabilit and responsiveness of the platform.",
   },
   {
     name: "AFT Labour Union",
