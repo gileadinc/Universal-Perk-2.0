@@ -72,6 +72,8 @@ const ProcessSection = () => {
                     <Image 
                       src={step.image}
                       alt={step.title}
+                      width={step.image.includes('unsplash') ? 800 : undefined}
+                      height={step.image.includes('unsplash') ? 600 : undefined}
                       className="w-full h-48 object-cover"
                     />
                   </div>
