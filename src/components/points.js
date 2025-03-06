@@ -81,7 +81,7 @@ const Points = () => {
           <h1 className="text-4xl md:text-6xl font-[700] max-w-[30rem]">
             Pain Points Discovered
           </h1>
-          <Image alt="pin svg" className="max-w-[10rem]" src="/pin.svg" />
+          <Image alt="pin svg" width="auto" height="auto" className="max-w-[10rem]" src="/pin.svg" />
         </div>
       </div>
     </div>

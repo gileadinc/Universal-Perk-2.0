@@ -67,7 +67,7 @@ export default function Features() {
             <div>
               <div className="flex flex-col items-start">
                 <div className="h-20 w-20">
-                  <Image
+                  <img
                     alt="Feature Logo"
                     src={feature.logo}
                     className="text-blue-600 object-fit"
