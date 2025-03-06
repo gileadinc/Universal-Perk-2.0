@@ -54,7 +54,7 @@ const ProcessSection = () => {
               <div className={`flex items-center gap-8 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
                 <div className="flex-1 bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
                   <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-white text-2xl">
+                    <div className="w-12 h-12 rounded-full flex items-center justify-center text-2xl">
                       {step.icon}
                     </div>
                     <h3 className="text-xl font-bold text-gray-900">{step.title}</h3>
@@ -62,8 +62,8 @@ const ProcessSection = () => {
                   <p className="text-gray-600">{step.description}</p>
                 </div>
 
-                <div className="w-16 h-16 rounded-full bg-blue-100 border-4 border-blue-600 flex items-center justify-center z-10">
-                  <span className="text-xl font-bold text-blue-600">{index + 1}</span>
+                <div className="w-16 h-16 rounded-full bg-white border-4 border-gray-200 flex items-center justify-center z-10">
+                  <span className="text-xl font-bold text-gray-800">{index + 1}</span>
                 </div>
 
                 <div className="flex-1">
