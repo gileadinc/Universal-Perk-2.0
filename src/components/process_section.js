@@ -7,37 +7,37 @@ const ProcessSection = () => {
       title: "Discovery & Project Planning",
       description: "Our technical team conducts in-depth analysis of your existing infrastructure, data sources, and integration requirements to architect an optimal AI solution.",
       icon: "🔍",
-      image: "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?w=800&auto=format&fit=crop&q=60"
+      image: "/two-people-one-man-one-women-min.jpeg"
     },
     {
       title: "Define your KPIs & Success Metrics",
       description: "We establish integration endpoints, define API specifications, configure cloud infrastructure, and implement monitoring systems for performance tracking.",
       icon: "⚙️",
-      image: "/diverse-team.png"
+      image: "/diverse-team-min.png"
     },
     {
       title: "AI Agent Development",
       description: "This is the backbone of the AI Agent. Our engineers develop custom Retrieval Augmented Generation systems, implement vector databases, and fine-tune Large Language Models for your specific use case.",
       icon: "🧠",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60"
+      image: "/chatbot-illustration-min.png"
     },
     {
       title: "Enterprise Deployment",
       description: "We implement secure CI/CD pipelines, configure load balancers, and deploy your AI agent across multiple environments with automated failover.",
       icon: "🚀",
-      image: '/rocket.jpg'
+      image: '/deploy.png'
     },
     {
       title: "Performance Optimization & Maintenance",
       description: "Continuous monitoring, performance tuning, and proactive maintenance to ensure optimal AI agent performance and reliability.",
       icon: "📈",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=60"
+      image: "/performance-min.jpg"
     }
   ];
 
   return (
-    <div className="relative bg-gradient-to-b from-gray-50 to-white py-24 overflow-hidden">
-      <div className="absolute inset-0 z-0 opacity-10">
+    <div className="relative bg-gradient-to-b from-blue-100 to-white py-24 overflow-hidden">
+      <div className="absolute inset-0 z-0 opacity-0">
         <img 
           src="https://images.unsplash.com/photo-1639322537504-6427a16b0a28?q=80&w=2000&auto=format&fit=crop" 
           alt="AI Cloud Background" 
@@ -80,7 +80,7 @@ const ProcessSection = () => {
                       alt={step.title}
                       width={800}
                       height={600}
-                      className="w-full h-48 object-cover"
+                      className="w-full h-auto object-cover"
                     />
                   </div>
                 </div>
