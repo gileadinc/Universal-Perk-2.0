@@ -36,8 +36,15 @@ const ProcessSection = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-gray-50 to-white py-24">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <div className="relative bg-gradient-to-b from-gray-50 to-white py-24 overflow-hidden">
+      <div className="absolute inset-0 z-0 opacity-10">
+        <img 
+          src="https://images.unsplash.com/photo-1639322537504-6427a16b0a28?q=80&w=2000&auto=format&fit=crop" 
+          alt="AI Cloud Background" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
         <div className="mx-auto max-w-4xl text-center mb-20">
           <h2 className="text-4xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800 sm:text-5xl">
             Enterprise AI Agent Development Pipeline
