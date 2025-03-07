@@ -63,7 +63,7 @@ const ProcessSection = () => {
                 </div>
 
                 <div className="w-16 h-16 rounded-full bg-white border-4 border-gray-200 flex items-center justify-center z-10">
-                  <span className="text-xl font-bold text-gray-800">{index + 1}</span>
+                  <span className="w-16 h-16 rounded-full bg-white border-4 border-blue-600 flex items-center justify-center z-10">{index + 1}</span>
                 </div>
 
                 <div className="flex-1">
