@@ -14,11 +14,10 @@ import {
 import Visualizer from "./visualizer";
 import { OpenAI } from "openai";
 import { synthesizeSpeech } from "../lib/utils"; // Import ElevenLabs function
-
-const NEXT_PUBLIC_OPENAI_API_KEY = "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"
 // Initialize the OpenAI client
+
 const openai = new OpenAI({
-  apiKey: NEXT_PUBLIC_OPENAI_API_KEY,
+  apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
   dangerouslyAllowBrowser: true,
 });
 
