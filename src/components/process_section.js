@@ -7,13 +7,13 @@ const ProcessSection = () => {
       title: "Discovery & Project Planning",
       description: "Our technical team conducts in-depth analysis of your existing infrastructure, data sources, and integration requirements to architect an optimal AI solution.",
       icon: "🔍",
-      image: "/two-people-one-man-one-women-min.jpeg"
+      image: "/discovery.jpg"
     },
     {
       title: "Define your KPIs & Success Metrics",
       description: "We establish integration endpoints, define API specifications, configure cloud infrastructure, and implement monitoring systems for performance tracking.",
       icon: "⚙️",
-      image: "/diverse-team-min.png"
+      image: "/kpi.png"
     },
     {
       title: "AI Agent Development",
@@ -36,7 +36,7 @@ const ProcessSection = () => {
   ];
 
   return (
-    <div className="relative bg-gradient-to-b from-blue-100 to-white py-24 overflow-hidden">
+    <div className="relative bg-gradient-to-b from-blue-50 to-white py-24 overflow-hidden">
       <div className="absolute inset-0 z-0 opacity-0">
         <img 
           src="https://images.unsplash.com/photo-1639322537504-6427a16b0a28?q=80&w=2000&auto=format&fit=crop" 

@@ -1,6 +1,6 @@
 const ValueProposition = () => {
   return (
-    <div className="bg-gradient-to-b from-white to-gray-50 py-24">
+    <div className="bg-gradient-to-b from-white to-blue-50 py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 space-y-24">
         {/* First Value Proposition */}
         <div>
@@ -185,7 +185,7 @@ const ValueProposition = () => {
           </div>
         </div>
 
-        {/* Fourth Value Proposition */}
+        {/* {/* Fourth Value Proposition 
         <div>
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="text-4xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800 sm:text-5xl mb-4">
@@ -246,7 +246,7 @@ const ValueProposition = () => {
           </div>
         </div>
 
-        {/* Fifth Value Proposition */}
+        {/* Fifth Value Proposition *
         <div>
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="text-4xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800 sm:text-5xl mb-4">
@@ -305,7 +305,7 @@ const ValueProposition = () => {
               Reach More Customers with AI—Get a Free Demo
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

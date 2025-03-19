@@ -6,7 +6,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+    <header className="fixed w-full top-0 z-50 bg-blue-50 backdrop-blur-sm shadow-sm">
       <nav
         className="flex items-center justify-between p-6 lg:px-8"
         aria-label="Global"
