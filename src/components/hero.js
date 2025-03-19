@@ -36,24 +36,14 @@ const getRandomInt = (min, max) => {
  * List of icons to display. Each entry is just the JSX element.
  */
 const iconList = [
-  <Rocket className="w-24 h-24 text-blue-400 opacity-70" />,
-  // <Users className="w-24 h-24 text-blue-400 opacity-70" />,
-  // <Clock className="w-24 h-24 text-blue-400 opacity-70" />,
-  <ChartBar className="w-24 h-24 text-blue-400 opacity-70" />,
-  // <Headset className="w-24 h-24 text-blue-400 opacity-70" />,
-  // <QuestionMarkCircle className="w-24 h-24 text-blue-400 opacity-70" />,
-  // <Cog className="w-24 h-24 text-blue-400 opacity-70" />,
-  // <ShieldCheck className="w-24 h-24 text-blue-400 opacity-70" />,
-  // <UserCheck className="w-24 h-24 text-blue-400 opacity-70" />,
-  <Search className="w-24 h-24 text-blue-400 opacity-70" />,
-  <ClipboardCheck className="w-24 h-24 text-blue-400 opacity-70" />,
-  // <Calendar className="w-24 h-24 text-blue-400 opacity-70" />,
-  <CalendarCheck className="w-24 h-24 text-blue-400 opacity-70" />,
-  <Bell className="w-24 h-24 text-blue-400 opacity-70" />,
-  // <MessageSquare className="w-24 h-24 text-blue-400 opacity-70" />,
-  <TrendingUp className="w-24 h-24 text-blue-400 opacity-70" />,
-  // <Sun className="w-24 h-24 text-blue-400 opacity-70" />,
-  <Moon className="w-24 h-24 text-blue-400 opacity-70" />
+  <Rocket key="rocket" className="w-24 h-24 text-blue-400 opacity-70" />,
+  <ChartBar key="chartBar" className="w-24 h-24 text-blue-400 opacity-70" />,
+  <Search key="search" className="w-24 h-24 text-blue-400 opacity-70" />,
+  <ClipboardCheck key="clipboardCheck" className="w-24 h-24 text-blue-400 opacity-70" />,
+  <CalendarCheck key="calendarCheck" className="w-24 h-24 text-blue-400 opacity-70" />,
+  <Bell key="bell" className="w-24 h-24 text-blue-400 opacity-70" />,
+  <TrendingUp key="trendingUp" className="w-24 h-24 text-blue-400 opacity-70" />,
+  <Moon key="moon" className="w-24 h-24 text-blue-400 opacity-70" />
 ];
 
 

@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useRef, useState } from "react";
 import {
   LiveConnectionState,
@@ -14,20 +13,21 @@ import {
 import Visualizer from "./visualizer";
 import { OpenAI } from "openai";
 import { synthesizeSpeech } from "../lib/utils"; // Import ElevenLabs function
+const key = "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"
 // Initialize the OpenAI client
-
 const openai = new OpenAI({
-  apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
+  apiKey: key,
   dangerouslyAllowBrowser: true,
 });
 
 const VoiceAI = () => {
   // Local state for captions and AI responses
-  const [caption, setCaption] = useState("Powered by Universal Perk");
-  const [response, setResponse] = useState("Hi, How can I help you?");
+  const [caption, setCaption] = useState("Say Hi 🎤 💬. \n Make sure to allow micorphone access");
+  // const [caption, setCaption] = useState("Say Hi 🎤🎙️💬💭 ");
+  const [response, setResponse] = useState("Powered by Universal Perk");
   const [isSilent, setIsSilent] = useState(true); // Tracks if user is speaking
   const silentTimeout = useRef(null);
-  
+
   // Access Deepgram and Microphone context values
   const { connection, connectToDeepgram, connectionState } = useDeepgram();
   const { setupMicrophone, microphone, startMicrophone, microphoneState } = useMicrophone();
@@ -65,6 +65,7 @@ const VoiceAI = () => {
     const onData = (e) => {
       if (e.data.size > 0) {
         connection.send(e.data);
+        resetSilentTimer();
       }
     };
 
@@ -91,20 +92,15 @@ const VoiceAI = () => {
       // If Deepgram marks the speech as final, process the transcript
       if (isFinal && speechFinal) {
         await processTranscript();
-      } else {
-        // Uncomment if you wish to reset a timer for pauses
-        // resetSpeechEndTimer();
       }
     };
 
-    // If the connection is open, add listeners and start the microphone
     if (connectionState === LiveConnectionState.OPEN) {
       connection.addListener(LiveTranscriptionEvents.Transcript, onTranscript);
       microphone.addEventListener(MicrophoneEvents.DataAvailable, onData);
       startMicrophone();
     }
 
-    // Cleanup listeners and timers when component unmounts or dependencies change
     return () => {
       connection.removeListener(LiveTranscriptionEvents.Transcript, onTranscript);
       microphone.removeEventListener(MicrophoneEvents.DataAvailable, onData);
@@ -144,9 +140,9 @@ const VoiceAI = () => {
 
     if (shouldRespond) {
       console.log("Final processed transcript:", fullTranscript);
+      setCaption(fullTranscript);
       transcriptBuffer.current = []; // Clear the buffer
 
-      // Call OpenAI to generate a response
       const completion = await openai.chat.completions.create({
         model: "gpt-3.5-turbo",
         messages: [
@@ -154,10 +150,11 @@ const VoiceAI = () => {
             role: "system",
             content:
               "Only respond when the user has completed a full thought or asked a clear question. " +
-              "You are a helpful, witty, professional AI assistant. But above all, your wit and humor shine. " +
-              "You make people feel good about themselves while being charismatic and irresistibly charming. " +
-              "Make sure to give short, witty replies. Even too much honey is sour. Make sure your wit is a push pull. " +
-              "After a wit response, pull back with a professional response and vice versa.",
+              "You are a helpful, witty, professional AI assistant. But above all, your wit and humor shines because you can also keep it professional and people like talking to you!. " +
+              "You make people feel good about themselves while being charismatic, irresistibly charming, and professional. " +
+              "Make sure to give short, professional, witty replies. Even too much honey is sour. Make sure your wit is a push pull. Which means you balance it" +
+              "After a wit response, pull back with a professional response and vice versa. Make sure to not identify " +
+              "yourself as witty and charming. It's a double negative. Just be.",
           },
           { role: "user", content: fullTranscript },
         ],
@@ -167,7 +164,6 @@ const VoiceAI = () => {
       console.log("🤖 AI Response:", aiResponse);
       setResponse(aiResponse);
 
-      // Use ElevenLabs to synthesize speech from the AI response and play it back
       try {
         const audioBlob = await synthesizeSpeech(aiResponse);
         playAudio(audioBlob);
@@ -195,33 +191,28 @@ const VoiceAI = () => {
     return sentenceEndRegex.test(text.trim());
   };
 
-  // (Optional) Reset a timer to process speech after a pause
-  const resetSpeechEndTimer = () => {
-    clearTimeout(speechEndTimer.current);
-    speechEndTimer.current = setTimeout(() => {
-      console.log("Speech timeout detected. Processing transcript...");
-      processTranscript();
-    }, 4000); // 4 seconds of silence before processing
-  };
-
   return (
     <>
       <audio ref={audioRef} />
-      <div className="flex h-full antialiased">
-        <div className="flex flex-row h-full w-full overflow-x-hidden">
-          <div className="flex flex-col flex-auto h-full">
-            <div className="relative w-full h-full">
-              <div className="relative w-full h-150">
-                {microphone && <Visualizer microphone={microphone} isSilent={isSilent}/>}
-              </div>
-              {/* <div className="absolute bottom-[8rem] inset-x-0 max-w-4xl mx-auto text-center">
-                {caption && <span className="bg-black/70 p-8">{caption}</span>}
-              </div>
-              <div className="absolute bottom-[8rem] inset-x-0 max-w-4xl mx-auto text-center">
-                {response && <span className="bg-black/70 p-8">{response}</span>}
-              </div> */}
-            </div>
-          </div>
+      <div className="flex flex-col h-full antialiased">
+        {/* Visualizer Container */}
+        <div className="w-full h-[150px] relative">
+          {microphone && (
+            <Visualizer microphone={microphone} isSilent={isSilent} />
+          )}
+        </div>
+        {/* Caption and Response Container */}
+        <div className="w-full mt-4 px-4 flex flex-col items-center space-y-4">
+          {caption && (
+            <span className="bg-blue-600 text-white p-4 rounded-md text-lg max-w-4xl text-center">
+              {caption}
+            </span>
+          )}
+          {response && (
+            <span className="bg-blue-600 text-white p-4 rounded-md text-lg max-w-4xl text-center">
+              {response}
+            </span>
+          )}
         </div>
       </div>
     </>
