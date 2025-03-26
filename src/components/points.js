@@ -1,4 +1,5 @@
 import { DevicePhoneMobileIcon } from "@heroicons/react/16/solid";
+import Image from "next/image";
 
 const Points = () => {
   return (
@@ -80,7 +81,7 @@ const Points = () => {
           <h1 className="text-4xl md:text-6xl font-[700] max-w-[30rem]">
             Pain Points Discovered
           </h1>
-          <img className="max-w-[10rem]" src="/pin.svg" />
+          <Image alt="pin svg" width="auto" height="auto" className="max-w-[10rem]" src="/pin.svg" />
         </div>
       </div>
     </div>

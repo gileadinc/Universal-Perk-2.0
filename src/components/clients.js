@@ -1,8 +1,21 @@
 import React from "react";
 import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import Image from "next/image";
 
 const images = [
+  {
+    path: "/tiktok-logo.webp",
+    alt: "Tiktok",
+  },
+  {
+    path: "/paypal-logo.png",
+    alt: "Paypal",
+  },
+  {
+    path: "/deliotte-logo.png",
+    alt: "Deliotte",
+  },
   {
     path: "/bayer-logo.jpeg",
     alt: "Bayer",
@@ -10,18 +23,6 @@ const images = [
   {
     path: "/cognizant-logo.png",
     alt: "Cognizant",
-  },
-  {
-    path: "/deliotte-logo.png",
-    alt: "Deliotte",
-  },
-  {
-    path: "/paypal-logo.png",
-    alt: "Paypal",
-  },
-  {
-    path: "/tiktok-logo.webp",
-    alt: "Tiktok",
   },
   {
     path: "/PM.png",
@@ -50,11 +51,13 @@ const Clients = () => {
           <div className="flex items-center justify-end space-x-40 animate-loop-scroll">
             {images.map((image, index) => (
               <div key={index}>
-                <img
+                <Image
+                  width={250}
+                  height={75}
                   loading="lazy"
                   src={image.path}
                   style={{maxWidth: '250px'}}
-                  className="w-auto h-[65px] max-w-auto"
+                  className="w-auto h-[75px] max-w-auto"
                   alt={image.alt}
                 />
               </div>

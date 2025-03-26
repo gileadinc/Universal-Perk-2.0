@@ -5,6 +5,6 @@ export default function Home() {
   return (
     <main className="pt-24 overflow-x-hidden">
       <LandingPage />
-    </main>
+      </main>
   );
 }

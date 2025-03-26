@@ -7,6 +7,8 @@ import Projects from "@/components/projects";
 import Schedule from "@/components/schedule";
 import Contact from "@/components/contact_us";
 import Features from "@/components/features";
+import ValueProposition from "@/components/value_proposition";
+import ProcessSection from "@/components/process_section";
 
 const LandingPage = () => {
   const scrollToSection = (sectionRef) => {
@@ -18,15 +20,16 @@ const LandingPage = () => {
       <main className="isolate">
         <Hero />
         <Clients />
+        <ValueProposition />
+        <ProcessSection />
         <Features />
         <Projects />
         <Schedule />
-        <Contact />
+        {/* <Contact /> */}
       </main>
       <Footer />
     </div>
   );
 };
-
 
 export default LandingPage;

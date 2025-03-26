@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Wallet, ChevronDown } from "lucide-react";
+import Image from "next/image";
 
 const features = [
   {
@@ -8,7 +9,7 @@ const features = [
     description: "What has been worked on",
     logo: "/paypal-logo.png",
     extraContent:
-      "We led a successful migration of REST API services to GraphQL, resulting in a 300% improvement in site performance. This transition enabled more efficient data fetching and reduced server load. In parallel, we undertook a comprehensive migration of legacy code, ensuring modern architecture compatibility, enhanced maintainability, and streamlined future development processes. This work has significantly improved the scalability and responsiveness of the platform.",
+      "We led a successful migration of REST API services to GraphQL, resulting in a 300% improvement in site performance. This transition enabled more efficient data fetching and reduced server load. In parallel, we undertook a comprehensive migration of legacy code, ensuring modern architecture compatibility, enhanced maintainability, and streamlined future development processes. This work has significantly improved the scalabilit and responsiveness of the platform.",
   },
   {
     name: "AFT Labour Union",
@@ -67,6 +68,7 @@ export default function Features() {
               <div className="flex flex-col items-start">
                 <div className="h-20 w-20">
                   <img
+                    alt="Feature Logo"
                     src={feature.logo}
                     className="text-blue-600 object-fit"
                   />

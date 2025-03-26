@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function Tools() {
     const images = [
       {
@@ -44,7 +46,7 @@ function Tools() {
           <h1 className="text-center text-[32px] mb-[20px]">Technologies used</h1>
           <div className="flex px-20 flex-wrap justify-center align-center gap-x-[10px]">
             {images.map((image, index) => (
-              <img key={index} src={image.url} className="max-w-30 max-h-30" />
+              <Image alt="Technologies Image" key={index} src={image.url} className="max-w-30 max-h-30" />
             ))}
           </div>
         </div>
