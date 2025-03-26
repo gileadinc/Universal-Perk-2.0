@@ -18,7 +18,7 @@ const Schedule = () => {
   ];
 
   return (
-    <div className="bg-[#4F46E5] py-12">
+    <div className="bg-blue-600 py-12">
       <div className="max-w-7xl mx-auto px-4 flex flex items-center">
         <h2 className="text-white text-4xl font-bold mb-8">
           Technologies we use

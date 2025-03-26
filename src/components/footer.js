@@ -2,10 +2,10 @@ import { Building, Mail, Phone } from "lucide-react";
 
 const navigation = {
   solutions: [
-    { name: "ERP Development", href: "#" },
-    { name: "Customer Relationship Management", href: "#" },
-    { name: "Volunteer Coordination Tools", href: "#" },
-    { name: "Data-Driven Insights", href: "#" },
+    { name: "Custom AI Voice Agent", href: "#" },
+    { name: "Custom AI Chatbot", href: "#" },
+    { name: "Cloud Solutions", href: "#" },
+    { name: "AI Development Services", href: "#" },
   ],
 
   legal: [
@@ -21,7 +21,7 @@ const Footer = () => {
   };
 
   return (
-    <footer aria-labelledby="footer-heading" className="bg-[#4F46E5]">
+    <footer aria-labelledby="footer-heading" className="bg-blue-600">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -72,12 +72,26 @@ const Footer = () => {
                 </div>
                 <div className="flex gap-x-4">
                   <dt className="flex-none">
+                    <span className="sr-only">Address</span>
+                    <Building
+                      aria-hidden="true"
+                      className="h-7 w-6 text-white"
+                    />
+                  </dt>
+                  <dd>
+                    422 Langone St STE A,
+                    <br />
+                    San Jose, CA 95113
+                  </dd>
+                </div>
+                <div className="flex gap-x-4">
+                  <dt className="flex-none">
                     <span className="sr-only">Telephone</span>
                     <Phone aria-hidden="true" className="h-7 w-6 text-white" />
                   </dt>
                   <dd>
                     <a
-                      href="tel:+1 (555) 234-5678"
+                      href="tel:+1 650-256-7514"
                       className="hover:text-white"
                     >
                       +1 (650)256-7514
